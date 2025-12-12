@@ -1955,7 +1955,7 @@ const allQuestions = [
     { question: "Qual a capital do Azerbaijão?", options: ["Yerevan", "Baku", "Tbilisi", "Teerã"], correct: 1, category: "geografia", difficulty: 3, explanation: "Baku." },
     { question: "Quem foi Verdi?", options: ["Pintor", "Compositor de ópera italiano", "Escritor", "Cientista"], correct: 1, category: "musica", difficulty: 3, explanation: "La Traviata, Aida." },
     { question: "Qual a capital da Geórgia?", options: ["Baku", "Tbilisi", "Yerevan", "Sochi"], correct: 1, category: "geografia", difficulty: 3, explanation: "Tbilisi." },
-    { question: "O que é 'handebol'?", options: ["Futebol com a mão", "Vôlei", "Basquete", "Tênis"], correct: 1, category: "esportes", difficulty: 1, explanation: "Esporte coletivo de gols." },
+    
     { question: "Qual a capital do Kuwait?", options: ["Doha", "Kuwait (Cidade)", "Riad", "Manama"], correct: 1, category: "geografia", difficulty: 2, explanation: "Cidade do Kuwait." },
     { question: "Quem foi Wagner?", options: ["Pintor", "Compositor alemão", "Escritor", "Rei"], correct: 1, category: "musica", difficulty: 3, explanation: "Óperas épicas." },
     { question: "Qual a capital do Bahrein?", options: ["Doha", "Manama", "Kuwait", "Dubai"], correct: 1, category: "geografia", difficulty: 3, explanation: "Manama." },
