@@ -134,111 +134,7 @@ const allQuestions = [
     { question: "Quem descobriu a Penicilina?", options: ["Fleming", "Pasteur", "Darwin", "Newton"], correct: 0, category: "ciencias", difficulty: 3, explanation: "Alexander Fleming, em 1928." },
     { question: "Qual o planeta mais quente?", options: ["Mercúrio", "Vênus", "Marte", "Júpiter"], correct: 1, category: "ciencias", difficulty: 3, explanation: "Vênus, devido ao efeito estufa." },
 
-    // --- LOTE 3: 50 NOVAS PERGUNTAS TI + 50 NOVAS PERGUNTAS FAMÍLIA (Adicionadas para diversão completa) ---
-    // (Mantidos)
-    { question: "O que é um 'Mouse'?", options: ["Um roedor", "Periférico de entrada", "Uma tela", "Um cabo"], correct: 1, category: "ti", difficulty: 1, explanation: "Dispositivo usado para mover o cursor na tela." },
-    { question: "Qual empresa criou o Android?", options: ["Apple", "Microsoft", "Google", "IBM"], correct: 2, category: "ti", difficulty: 1, explanation: "O Google adquiriu o Android em 2005." },
-    { question: "O que significa 'WWW'?", options: ["World Wide Web", "Web World Wide", "Wide Web World", "World Web Wide"], correct: 0, category: "ti", difficulty: 1, explanation: "Rede mundial de computadores." },
-    { question: "Para que serve o 'Esc' no teclado?", options: ["Entrar", "Sair/Cancelar", "Salvar", "Apagar"], correct: 1, category: "ti", difficulty: 1, explanation: "A tecla Escape é usada para cancelar ações ou sair de telas." },
-    { question: "Qual destes é um formato de imagem?", options: [".mp3", ".avi", ".jpg", ".txt"], correct: 2, category: "ti", difficulty: 1, explanation: ".jpg é um formato comum de compressão de imagens." },
-    { question: "O que é 'Login'?", options: ["Sair do sistema", "Entrar no sistema", "Apagar conta", "Criar senha"], correct: 1, category: "ti", difficulty: 1, explanation: "Processo de identificação para acessar um sistema." },
-    { question: "O que é 'Touchscreen'?", options: ["Tela de toque", "Tela quebrada", "Teclado virtual", "Mouse sem fio"], correct: 0, category: "ti", difficulty: 1, explanation: "Tecnologia que permite interagir tocando na tela." },
-    { question: "Qual a função da 'Lixeira' no PC?", options: ["Guardar vírus", "Armazenar arquivos deletados", "Limpar a tela", "Organizar e-mails"], correct: 1, category: "ti", difficulty: 1, explanation: "Permite recuperar arquivos excluídos antes da remoção permanente." },
-    { question: "O que é 'Youtube'?", options: ["Site de compras", "Plataforma de vídeos", "Rede social de texto", "Serviço de e-mail"], correct: 1, category: "ti", difficulty: 1, explanation: "Maior plataforma de compartilhamento de vídeos do mundo." },
-    { question: "Qual tecla deixa tudo maiúsculo?", options: ["Shift", "Caps Lock", "Alt", "Ctrl"], correct: 1, category: "ti", difficulty: 1, explanation: "Caps Lock trava a escrita em caixa alta." },
-    { question: "O que é um 'Smartphone'?", options: ["Telefone fixo", "Celular inteligente", "Calculadora", "Rádio"], correct: 1, category: "ti", difficulty: 1, explanation: "Celular com sistema operacional e acesso à internet." },
-    { question: "Quem é Bill Gates?", options: ["Fundador da Apple", "Fundador da Microsoft", "Criador do Facebook", "Presidente dos EUA"], correct: 1, category: "ti", difficulty: 1, explanation: "Fundou a Microsoft em 1975." },
-    { question: "O que é um 'Emoji'?", options: ["Um vírus", "Uma imagem/ícone expressivo", "Um erro de código", "Um tipo de fonte"], correct: 1, category: "ti", difficulty: 1, explanation: "Pequenos ícones usados para expressar emoções digitalmente." },
-    { question: "Qual a cor do logo do Facebook?", options: ["Vermelho", "Verde", "Azul", "Amarelo"], correct: 2, category: "ti", difficulty: 1, explanation: "O azul é a cor característica da marca." },
-    { question: "O que é 'Gamer'?", options: ["Quem faz programas", "Quem joga videogames", "Quem conserta PCs", "Quem vende peças"], correct: 1, category: "ti", difficulty: 1, explanation: "Termo usado para entusiastas de jogos eletrônicos." },
-    { question: "O que é 'Trojan'?", options: ["Antivírus", "Cavalo de Tróia (Malware)", "Navegador", "Firewall"], correct: 1, category: "ti", difficulty: 2, explanation: "Malware que se disfarça de software legítimo." },
-    { question: "O que significa 'PDF'?", options: ["Portable Document Format", "Personal Data File", "Public Domain File", "Print Data Format"], correct: 0, category: "ti", difficulty: 2, explanation: "Formato criado pela Adobe para documentos portáteis." },
-    { question: "Qual a função do 'Excel'?", options: ["Editar texto", "Planilhas eletrônicas", "Apresentação de slides", "Edição de vídeo"], correct: 1, category: "ti", difficulty: 2, explanation: "Software da Microsoft para criação de planilhas e cálculos." },
-    { question: "O que é '4K' em monitores?", options: ["Preço", "Resolução (Ultra HD)", "Peso", "Consumo de energia"], correct: 1, category: "ti", difficulty: 2, explanation: "Resolução de aproximadamente 4000 pixels de largura." },
-    { question: "O que é 'SaaS'?", options: ["Software as a Service", "System as a Server", "Storage and Security", "Simple and Safe"], correct: 0, category: "ti", difficulty: 2, explanation: "Modelo onde o software é oferecido como serviço via internet." },
-    { question: "Qual linguagem é usada no Unity?", options: ["Java", "C#", "Python", "Swift"], correct: 1, category: "ti", difficulty: 2, explanation: "C# (C-Sharp) é a linguagem de script principal do Unity." },
-    { question: "O que é 'SEO'?", options: ["Search Engine Optimization", "System Error Output", "Secure Email Option", "Simple Edit Object"], correct: 0, category: "ti", difficulty: 2, explanation: "Técnicas para melhorar o posicionamento em buscadores." },
-    { question: "O que é 'Localhost'?", options: ["Hospedagem web", "O computador local", "Um cabo de rede", "Um provedor de internet"], correct: 1, category: "ti", difficulty: 2, explanation: "Refere-se à própria máquina que está sendo usada (IP 127.0.0.1)." },
-    { question: "O que é 'RGB'?", options: ["Red, Green, Blue", "Read, Get, Byte", "Real, Great, Big", "Random, Generate, Bit"], correct: 0, category: "ti", difficulty: 2, explanation: "Sistema de cores luz usado em monitores." },
-    { question: "Qual a função do 'SMTP'?", options: ["Receber e-mail", "Enviar e-mail", "Navegar na web", "Transferir arquivos"], correct: 1, category: "ti", difficulty: 2, explanation: "Simple Mail Transfer Protocol é usado para envio de e-mails." },
-    { question: "O que é um 'Bug Bounty'?", options: ["Um jogo", "Recompensa por falhas", "Um antivírus", "Um tipo de código"], correct: 1, category: "ti", difficulty: 2, explanation: "Programa que paga quem encontrar falhas de segurança." },
-    { question: "Qual empresa é dona do Instagram?", options: ["Google", "Apple", "Meta", "Amazon"], correct: 2, category: "ti", difficulty: 2, explanation: "A Meta (antigo Facebook) adquiriu o Instagram." },
-    { question: "O que é 'Incognito Mode'?", options: ["Modo rápido", "Navegação privada", "Modo escuro", "Modo desenvolvedor"], correct: 1, category: "ti", difficulty: 2, explanation: "Navegação que não salva histórico ou cookies localmente." },
-    { question: "O que é 'BIOS'?", options: ["Sistema Básico de Entrada/Saída", "Bateria Interna", "Botão de Início", "Barra de Sistema"], correct: 0, category: "ti", difficulty: 2, explanation: "Firmware que inicializa o hardware do computador." },
-    { question: "O que é 'UX' Design?", options: ["User Xenon", "User Experience", "Ultra Xtreme", "Unity Xbox"], correct: 1, category: "ti", difficulty: 2, explanation: "Foca na experiência e usabilidade do usuário." },
-    { question: "Qual a porta padrão do SSH?", options: ["21", "22", "80", "443"], correct: 1, category: "ti", difficulty: 3, explanation: "Porta 22 é o padrão para Secure Shell." },
-    { question: "O que é 'AWS'?", options: ["Amazon Web Services", "Apple Web System", "Advanced Windows Server", "Auto Wireless Signal"], correct: 0, category: "ti", difficulty: 3, explanation: "Plataforma de computação em nuvem da Amazon." },
-    { question: "O que significa 'JSON'?", options: ["Java Source Object Network", "JavaScript Object Notation", "Just Simple Object Name", "Join System On Network"], correct: 1, category: "ti", difficulty: 3, explanation: "Formato leve de troca de dados baseado em JS." },
-    { question: "Qual o método HTTP para atualizar?", options: ["GET", "POST", "PUT", "DELETE"], correct: 2, category: "ti", difficulty: 3, explanation: "PUT (ou PATCH) é usado para atualização de recursos." },
-    { question: "O que é 'Kubernetes'?", options: ["Um jogo", "Orquestrador de containers", "Linguagem de banco", "Sistema operacional"], correct: 1, category: "ti", difficulty: 3, explanation: "Sistema para gerenciar aplicações em containers." },
-    { question: "O que é 'CI/CD'?", options: ["Continuous Integration/Deployment", "Code Input/Code Delete", "Computer Interface/Compact Disc", "Central Intelligence/Central Data"], correct: 0, category: "ti", difficulty: 3, explanation: "Práticas de automação no desenvolvimento de software." },
-    { question: "Qual a função do 'Redis'?", options: ["Editor de texto", "Armazenamento em memória (Cache)", "Navegador", "Antivírus"], correct: 1, category: "ti", difficulty: 3, explanation: "Banco de dados em memória de alto desempenho." },
-    { question: "O que é 'Scrum'?", options: ["Linguagem de programação", "Framework Ágil", "Peça de hardware", "Tipo de servidor"], correct: 1, category: "ti", difficulty: 3, explanation: "Framework para gestão ágil de projetos." },
-    { question: "O que é 'npm'?", options: ["Node Package Manager", "New Program Maker", "Network Protocol Map", "No Personal Mail"], correct: 0, category: "ti", difficulty: 3, explanation: "Gerenciador de pacotes padrão para Node.js." },
-    { question: "Quem criou a linguagem Java?", options: ["James Gosling", "Bjarne Stroustrup", "Guido van Rossum", "Dennis Ritchie"], correct: 0, category: "ti", difficulty: 3, explanation: "James Gosling na Sun Microsystems." },
-    { question: "O que é 'Three.js'?", options: ["Biblioteca 3D para Web", "Versão do JS", "Framework de testes", "Editor de código"], correct: 0, category: "ti", difficulty: 3, explanation: "Biblioteca JS para criar gráficos 3D no navegador." },
-    { question: "O que é 'Flutter'?", options: ["Rede social", "UI Toolkit do Google", "Linguagem de banco", "Servidor web"], correct: 1, category: "ti", difficulty: 3, explanation: "Framework para criar apps nativos compilados." },
-    { question: "O que é 'Jira'?", options: ["Linguagem de script", "Ferramenta de gestão de projetos", "Banco de dados", "Servidor de e-mail"], correct: 1, category: "ti", difficulty: 3, explanation: "Software da Atlassian para rastreamento de tarefas." },
-    { question: "O que é 'Kotlin'?", options: ["Marca de ketchup", "Linguagem de programação", "Sistema operacional", "Editor de vídeo"], correct: 1, category: "ti", difficulty: 3, explanation: "Linguagem moderna oficial para desenvolvimento Android." },
-    { question: "Qual a complexidade de Busca Binária?", options: ["O(n)", "O(1)", "O(log n)", "O(n^2)"], correct: 2, category: "ti", difficulty: 3, explanation: "Algoritmo eficiente que divide o espaço de busca pela metade." },
-    { question: "O que é 'SOLID'?", options: ["Estado da matéria", "Princípios de design de software", "Marca de HD", "Linguagem de banco"], correct: 1, category: "ti", difficulty: 3, explanation: "Cinco princípios para design de software orientado a objetos." },
-    { question: "O que é 'JWT'?", options: ["JSON Web Token", "Java Web Tool", "Join With Table", "Just Write Text"], correct: 0, category: "ti", difficulty: 3, explanation: "Padrão para autenticação e troca de informações segura." },
-    { question: "O que é 'ORM'?", options: ["Mapeamento Objeto-Relacional", "Operação de Rede Móvel", "Objeto de Rede Massiva", "Organização de Recursos"], correct: 0, category: "ti", difficulty: 3, explanation: "Técnica para converter dados entre sistemas de tipos incompatíveis." },
-    { question: "O que é 'Polimorfismo'?", options: ["Múltiplas formas", "Muitos arquivos", "Vários servidores", "Erro de compilação"], correct: 0, category: "ti", difficulty: 3, explanation: "Capacidade de um objeto ser tratado como instâncias de diferentes classes." },
-    { question: "Qual a função do 'Webpack'?", options: ["Navegador", "Empacotador de módulos", "Banco de dados", "Editor de texto"], correct: 1, category: "ti", difficulty: 3, explanation: "Ferramenta para empacotar arquivos JS e assets." },
-    { question: "Qual a capital do Japão?", options: ["Seul", "Pequim", "Tóquio", "Bangkok"], correct: 2, category: "geografia", difficulty: 1, explanation: "Tóquio é a capital e maior cidade do Japão." },
-    { question: "Qual é a cor do morango maduro?", options: ["Azul", "Verde", "Vermelho", "Amarelo"], correct: 2, category: "geral", difficulty: 1, explanation: "Morangos maduros são vermelhos." },
-    { question: "Quantas patas tem um cachorro?", options: ["2", "4", "6", "8"], correct: 1, category: "ciencias", difficulty: 1, explanation: "Cães são quadrúpedes." },
-    { question: "O que é um 'Dálmata'?", options: ["Um gato", "Um pássaro", "Um cachorro", "Um peixe"], correct: 2, category: "ciencias", difficulty: 1, explanation: "Raça de cachorro famosa pelas manchas." },
-    { question: "Qual instrumento o Neymar usa?", options: ["Violão", "Bola", "Raquete", "Taco"], correct: 1, category: "esportes", difficulty: 1, explanation: "Neymar é jogador de futebol." },
-    { question: "Onde fica o Cristo Redentor?", options: ["São Paulo", "Bahia", "Rio de Janeiro", "Minas Gerais"], correct: 2, category: "geografia", difficulty: 1, explanation: "Fica no morro do Corcovado, no Rio." },
-    { question: "Qual a cor do Smurf?", options: ["Verde", "Azul", "Rosa", "Roxo"], correct: 1, category: "cultura", difficulty: 1, explanation: "Os Smurfs são criaturinhas azuis." },
-    { question: "O que a galinha bota?", options: ["Leite", "Lã", "Ovo", "Mel"], correct: 2, category: "ciencias", difficulty: 1, explanation: "Galinhas põem ovos." },
-    { question: "Qual o nome do burro do Shrek?", options: ["Burro", "Alazão", "Pé de Pano", "Spirit"], correct: 0, category: "filmes", difficulty: 1, explanation: "O nome dele é simplesmente Burro." },
-    { question: "Quantas cores tem o arco-íris?", options: ["5", "6", "7", "8"], correct: 2, category: "ciencias", difficulty: 1, explanation: "Tradicionalmente são 7 cores." },
-    { question: "O que o médico usa para ouvir o coração?", options: ["Microfone", "Estetoscópio", "Telescópio", "Periscópio"], correct: 1, category: "geral", difficulty: 1, explanation: "Ferramenta médica padrão." },
-    { question: "Qual o maior animal terrestre?", options: ["Elefante Africano", "Rinoceronte", "Girafa", "Hipopótamo"], correct: 0, category: "ciencias", difficulty: 1, explanation: "O elefante africano é o maior." },
-    { question: "O que é 'Youtube'?", options: ["Comida", "Site de vídeos", "Planeta", "Esporte"], correct: 1, category: "ti", difficulty: 1, explanation: "Plataforma de vídeos (Pergunta híbrida, mas serve)." },
-    { question: "Qual a moeda do Brasil?", options: ["Dólar", "Peso", "Real", "Euro"], correct: 2, category: "geral", difficulty: 1, explanation: "O Real é a moeda oficial." },
-    { question: "O que a abelha fabrica?", options: ["Açúcar", "Mel", "Sal", "Farinha"], correct: 1, category: "ciencias", difficulty: 1, explanation: "Abelhas produzem mel." },
-    { question: "Qual a capital da Alemanha?", options: ["Munique", "Hamburgo", "Berlim", "Frankfurt"], correct: 2, category: "geografia", difficulty: 2, explanation: "Berlim é a capital." },
-    { question: "Quantos dentes tem um adulto (completo)?", options: ["28", "30", "32", "34"], correct: 2, category: "ciencias", difficulty: 2, explanation: "Incluindo os sisos, são 32." },
-    { question: "Qual o pássaro mais rápido do mundo?", options: ["Águia", "Falcão-peregrino", "Avestruz", "Beija-flor"], correct: 1, category: "ciencias", difficulty: 2, explanation: "Chega a mais de 300km/h no mergulho." },
-    { question: "Quem pintou 'A Escola de Atenas'?", options: ["Da Vinci", "Rafael", "Michelangelo", "Donatello"], correct: 1, category: "arte", difficulty: 2, explanation: "Rafael Sanzio." },
-    { question: "Qual a capital da Coreia do Sul?", options: ["Tóquio", "Pequim", "Seul", "Pyongyang"], correct: 2, category: "geografia", difficulty: 2, explanation: "Seul é a capital." },
-    { question: "Qual o ingrediente principal do guacamole?", options: ["Tomate", "Abacate", "Cebola", "Pimenta"], correct: 1, category: "cultura", difficulty: 2, explanation: "Prato mexicano à base de abacate." },
-    { question: "Quem é o vocalista do Queen?", options: ["Elton John", "Freddie Mercury", "David Bowie", "Mick Jagger"], correct: 1, category: "musica", difficulty: 2, explanation: "Freddie Mercury, lendário vocalista." },
-    { question: "Qual o esporte com uma peteca e raquete?", options: ["Tênis", "Ping Pong", "Badminton", "Squash"], correct: 2, category: "esportes", difficulty: 2, explanation: "Badminton usa uma peteca (shuttlecock)." },
-    { question: "Qual a capital de Portugal?", options: ["Porto", "Lisboa", "Braga", "Coimbra"], correct: 1, category: "geografia", difficulty: 2, explanation: "Lisboa é a capital." },
-    { question: "Quem dirigiu 'Jurassic Park'?", options: ["George Lucas", "Steven Spielberg", "James Cameron", "Nolan"], correct: 1, category: "filmes", difficulty: 2, explanation: "Spielberg dirigiu o clássico de 1993." },
-    { question: "Quantas cordas tem um violão padrão?", options: ["4", "5", "6", "12"], correct: 2, category: "musica", difficulty: 2, explanation: "O padrão são 6 cordas." },
-    { question: "O que estuda a Geologia?", options: ["Estrelas", "Rochas e Terra", "Animais", "Plantas"], correct: 1, category: "ciencias", difficulty: 2, explanation: "Ciência da Terra e suas rochas." },
-    { question: "Qual a capital do Egito?", options: ["Alexandria", "Luxor", "Cairo", "Giza"], correct: 2, category: "geografia", difficulty: 2, explanation: "Cairo é a capital." },
-    { question: "O que é um 'Origami'?", options: ["Comida", "Arte de dobrar papel", "Luta", "Roupa"], correct: 1, category: "cultura", difficulty: 2, explanation: "Arte japonesa de dobraduras." },
-    { question: "Quem inventou a lâmpada (comercial)?", options: ["Tesla", "Edison", "Graham Bell", "Ford"], correct: 1, category: "ciencias", difficulty: 2, explanation: "Thomas Edison popularizou a lâmpada incandescente." },
-    { question: "Qual a capital da Turquia?", options: ["Istambul", "Ancara", "Antália", "Esmirna"], correct: 1, category: "geografia", difficulty: 3, explanation: "Ancara é a capital, não Istambul." },
-    { question: "Qual o mineral mais macio?", options: ["Quartzo", "Talco", "Gipso", "Calcita"], correct: 1, category: "ciencias", difficulty: 3, explanation: "Talco é o 1 na escala de Mohs." },
-    { question: "Quem escreveu '1984'?", options: ["Huxley", "Orwell", "Bradbury", "Tolkien"], correct: 1, category: "literatura", difficulty: 3, explanation: "George Orwell." },
-    { question: "Qual o gás mais abundante na atmosfera?", options: ["Oxigênio", "Nitrogênio", "Hélio", "Carbono"], correct: 1, category: "ciencias", difficulty: 3, explanation: "Nitrogênio compõe cerca de 78%." },
-    { question: "Qual o símbolo químico do Chumbo?", options: ["Ch", "Pb", "Fe", "Cu"], correct: 1, category: "ciencias", difficulty: 3, explanation: "Pb, do latim Plumbum." },
-    { question: "Qual a fossa oceânica mais profunda?", options: ["Fossa das Marianas", "Fossa de Java", "Fossa de Porto Rico", "Fossa do Japão"], correct: 0, category: "geografia", difficulty: 3, explanation: "Local mais profundo dos oceanos." },
-    { question: "Qual a guerra mais curta da história?", options: ["Guerra dos 6 Dias", "Anglo-Zanzibar", "Guerra do Golfo", "Guerra das Malvinas"], correct: 1, category: "historia", difficulty: 3, explanation: "Durou entre 38 e 45 minutos em 1896." },
-    { question: "Quem inventou o telefone?", options: ["Edison", "Graham Bell", "Marconi", "Tesla"], correct: 1, category: "ciencias", difficulty: 3, explanation: "Alexander Graham Bell." },
-    { question: "Qual a capital da Islândia?", options: ["Oslo", "Helsinque", "Reykjavik", "Estocolmo"], correct: 2, category: "geografia", difficulty: 3, explanation: "Reykjavik." },
-    { question: "Quem escreveu 'A Odisséia'?", options: ["Sócrates", "Platão", "Homero", "Aristóteles"], correct: 2, category: "literatura", difficulty: 3, explanation: "Poema épico atribuído a Homero." },
-    { question: "Qual a temperatura de fusão do Ferro?", options: ["100°C", "500°C", "1538°C", "3000°C"], correct: 2, category: "ciencias", difficulty: 3, explanation: "Aproximadamente 1538 graus Celsius." },
-    { question: "Qual o menor continente?", options: ["Europa", "Antártida", "Oceania", "América do Sul"], correct: 2, category: "geografia", difficulty: 3, explanation: "Oceania é o menor em área terrestre." },
-    { question: "Quem descobriu a Gravidade?", options: ["Einstein", "Newton", "Galileu", "Hawking"], correct: 1, category: "ciencias", difficulty: 3, explanation: "Isaac Newton." },
-    { question: "Qual a moeda da Rússia?", options: ["Euro", "Dólar", "Rublo", "Yuan"], correct: 2, category: "geografia", difficulty: 3, explanation: "O Rublo Russo." },
-    { question: "Quem foi a primeira mulher a voar sozinha no Atlântico?", options: ["Amelia Earhart", "Valentina Tereshkova", "Marie Curie", "Frida Kahlo"], correct: 0, category: "historia", difficulty: 3, explanation: "Amelia Earhart em 1932." },
-    { question: "Qual o maior órgão interno do corpo?", options: ["Coração", "Pulmão", "Fígado", "Estômago"], correct: 2, category: "ciencias", difficulty: 3, explanation: "O fígado (a pele é o maior órgão geral, mas é externo)." },
-    { question: "Quem pintou 'A Persistência da Memória'?", options: ["Picasso", "Dali", "Miro", "Goya"], correct: 1, category: "arte", difficulty: 3, explanation: "Salvador Dalí (quadro dos relógios derretendo)." },
-    { question: "Qual o prédio mais alto do mundo?", options: ["Empire State", "Burj Khalifa", "Shanghai Tower", "CN Tower"], correct: 1, category: "geografia", difficulty: 3, explanation: "Burj Khalifa em Dubai." },
-    { question: "Qual a capital da Suíça?", options: ["Zurique", "Genebra", "Berna", "Basileia"], correct: 2, category: "geografia", difficulty: 3, explanation: "Berna é a cidade federal (capital de facto)." },
-    { question: "O que estuda a Micologia?", options: ["Bactérias", "Vírus", "Fungos", "Plantas"], correct: 2, category: "ciencias", difficulty: 3, explanation: "Ramo da biologia que estuda os fungos." },
-
-    // --- LOTE 4: NOVAS 100 PERGUNTAS ADICIONADAS AGORA (50 TI + 50 Família) ---
-    // TI - FÁCIL
+    // --- LOTE 4: NOVAS PERGUNTAS ADICIONADAS ANTERIORMENTE (Mantidos) ---
     { question: "O que é um 'Pixel'?", options: ["Ponto de cor na tela", "Tipo de cabo", "Uma moeda virtual", "Marca de PC"], correct: 0, category: "ti", difficulty: 1, explanation: "Menor elemento de uma imagem digital." },
     { question: "Para que serve o 'Ctrl+V'?", options: ["Copiar", "Colar", "Cortar", "Salvar"], correct: 1, category: "ti", difficulty: 1, explanation: "Atalho universal para colar conteúdo." },
     { question: "O que é 'Spam'?", options: ["Vírus", "E-mail indesejado", "Jogo", "Antivírus"], correct: 1, category: "ti", difficulty: 1, explanation: "Mensagens eletrônicas não solicitadas enviadas em massa." },
@@ -255,8 +151,6 @@ const allQuestions = [
     { question: "O que é 'Restart'?", options: ["Desligar", "Reiniciar", "Suspender", "Bloquear"], correct: 1, category: "ti", difficulty: 1, explanation: "Processo de desligar e ligar o computador novamente." },
     { question: "O que é 'Desktop'?", options: ["Área de trabalho", "Teclado", "Mouse", "Internet"], correct: 0, category: "ti", difficulty: 1, explanation: "Ambiente principal da interface gráfica do usuário." },
     { question: "O que é 'Folder'?", options: ["Arquivo", "Pasta", "Programa", "Site"], correct: 1, category: "ti", difficulty: 1, explanation: "Diretório usado para organizar arquivos." },
-
-    // TI - MÉDIO
     { question: "O que é 'Microservices'?", options: ["Serviços pequenos de limpeza", "Arquitetura de software modular", "Microchips", "Serviços de internet baratos"], correct: 1, category: "ti", difficulty: 2, explanation: "Abordagem arquitetural onde o software é composto por pequenos serviços independentes." },
     { question: "O que é 'GraphQL'?", options: ["Linguagem de consulta para APIs", "Gráfico de ações", "Linguagem de banco SQL", "Biblioteca de gráficos 3D"], correct: 0, category: "ti", difficulty: 2, explanation: "Linguagem de consulta e manipulação de dados para APIs, alternativa ao REST." },
     { question: "O que é 'WebSocket'?", options: ["Soquete de energia", "Protocolo de comunicação bidirecional", "Site bloqueado", "Linguagem web"], correct: 1, category: "ti", difficulty: 2, explanation: "Permite comunicação interativa entre o navegador e o servidor." },
@@ -274,8 +168,6 @@ const allQuestions = [
     { question: "O que é 'Cookie'?", options: ["Biscoito", "Dado armazenado no navegador", "Vírus", "Programa espião"], correct: 1, category: "ti", difficulty: 2, explanation: "Pequenos arquivos de texto salvos pelo navegador com dados de navegação." },
     { question: "O que é 'Domain'?", options: ["Endereço de um site (Nome)", "IP do servidor", "Hospedagem", "E-mail"], correct: 0, category: "ti", difficulty: 2, explanation: "Nome amigável usado para identificar um ou mais endereços IP (ex: google.com)." },
     { question: "O que é 'Hosting'?", options: ["Hospedagem de sites", "Criação de sites", "Domínio", "Navegação"], correct: 0, category: "ti", difficulty: 2, explanation: "Serviço que armazena os arquivos de um site e o disponibiliza na internet." },
-
-    // TI - DIFÍCIL
     { question: "O que é 'ACID' em Banco de Dados?", options: ["Ácido corrosivo", "Atomicidade, Consistência, Isolamento, Durabilidade", "Algoritmo de Compressão Inteligente de Dados", "Access Control ID"], correct: 1, category: "ti", difficulty: 3, explanation: "Conjunto de propriedades que garantem a validade de transações em bancos de dados." },
     { question: "O que é 'CAP Theorem'?", options: ["Consistency, Availability, Partition Tolerance", "Computer, Algorithm, Program", "Code, Access, Protocol", "Central, Application, Process"], correct: 0, category: "ti", difficulty: 3, explanation: "Teorema que diz que um sistema distribuído não pode garantir os três simultaneamente." },
     { question: "O que é 'Pointer' em C?", options: ["Seta do mouse", "Variável que armazena endereço de memória", "Comando de impressão", "Ponto final"], correct: 1, category: "ti", difficulty: 3, explanation: "Variável que contém o endereço de memória de outra variável." },
@@ -293,8 +185,6 @@ const allQuestions = [
     { question: "O que é 'NoSQL'?", options: ["Não SQL", "Not Only SQL", "Never SQL", "New SQL"], correct: 1, category: "ti", difficulty: 3, explanation: "Classe de bancos de dados que fornecem mecanismo para armazenamento e recuperação de dados além do tabular." },
     { question: "O que é 'DevOps'?", options: ["Desenvolvedores de Operações", "Cultura de união entre Dev e Ops", "Departamento de TI", "Ferramenta de código"], correct: 1, category: "ti", difficulty: 3, explanation: "Conjunto de práticas que combina desenvolvimento de software (Dev) e operações de TI (Ops)." },
     { question: "O que é 'TDD'?", options: ["Test Driven Development", "Technical Design Document", "Time Driven Data", "Total Data Destruction"], correct: 0, category: "ti", difficulty: 3, explanation: "Desenvolvimento orientado a testes: escrever testes antes do código." },
-
-    // FAMÍLIA/GERAL - FÁCIL
     { question: "Qual a cor do céu à noite?", options: ["Azul claro", "Preto/Azul escuro", "Verde", "Laranja"], correct: 1, category: "geral", difficulty: 1, explanation: "À noite, sem a luz do sol, o céu parece preto ou azul muito escuro." },
     { question: "O que o sapo come?", options: ["Insetos", "Pedras", "Vidro", "Plástico"], correct: 0, category: "ciencias", difficulty: 1, explanation: "Sapos se alimentam principalmente de insetos e pequenos invertebrados." },
     { question: "Quantas pernas tem o cavalo?", options: ["2", "3", "4", "5"], correct: 2, category: "ciencias", difficulty: 1, explanation: "Cavalos são quadrúpedes." },
@@ -311,8 +201,6 @@ const allQuestions = [
     { question: "Qual a cor da grama saudável?", options: ["Azul", "Verde", "Roxa", "Vermelha"], correct: 1, category: "geral", difficulty: 1, explanation: "A clorofila dá a cor verde às plantas." },
     { question: "Para que serve o guarda-chuva?", options: ["Voar", "Proteger da chuva", "Cozinhar", "Dormir"], correct: 1, category: "geral", difficulty: 1, explanation: "Objeto usado para proteção contra chuva." },
     { question: "Quem entrega presentes no Natal?", options: ["Coelhinho da Páscoa", "Papai Noel", "Fada do Dente", "Bicho Papão"], correct: 1, category: "cultura", difficulty: 1, explanation: "Figura lendária do Natal." },
-
-    // FAMÍLIA/GERAL - MÉDIO
     { question: "Qual a capital da Itália?", options: ["Milão", "Veneza", "Roma", "Nápoles"], correct: 2, category: "geografia", difficulty: 2, explanation: "Roma é a capital histórica e política." },
     { question: "Quantas letras tem o alfabeto (PT-BR)?", options: ["23", "25", "26", "27"], correct: 2, category: "geral", difficulty: 2, explanation: "Desde o novo acordo ortográfico, são 26 letras." },
     { question: "Qual o maior oceano do mundo?", options: ["Atlântico", "Índico", "Pacífico", "Ártico"], correct: 2, category: "geografia", difficulty: 2, explanation: "O Pacífico é o maior e mais profundo." },
@@ -330,8 +218,6 @@ const allQuestions = [
     { question: "O que é 'H2O'?", options: ["Sal", "Açúcar", "Água", "Ar"], correct: 2, category: "ciencias", difficulty: 2, explanation: "Fórmula química da água." },
     { question: "Qual o instrumento do Sherlock Holmes?", options: ["Piano", "Violino", "Flauta", "Bateria"], correct: 1, category: "literatura", difficulty: 2, explanation: "Holmes tocava violino para relaxar." },
     { question: "Onde ficam as Pirâmides de Gizé?", options: ["México", "Egito", "Peru", "China"], correct: 1, category: "geografia", difficulty: 2, explanation: "No Egito, perto do Cairo." },
-
-    // FAMÍLIA/GERAL - DIFÍCIL
     { question: "Qual a montanha mais alta da África?", options: ["Everest", "Kilimanjaro", "K2", "Fuji"], correct: 1, category: "geografia", difficulty: 3, explanation: "O Monte Kilimanjaro, na Tanzânia." },
     { question: "Quem escreveu 'Os Lusíadas'?", options: ["Pessoa", "Camões", "Saramago", "Eça"], correct: 1, category: "literatura", difficulty: 3, explanation: "Luís de Camões." },
     { question: "Qual a capital do Canadá?", options: ["Toronto", "Vancouver", "Ottawa", "Montreal"], correct: 2, category: "geografia", difficulty: 3, explanation: "Ottawa é a capital federal." },
@@ -348,7 +234,114 @@ const allQuestions = [
     { question: "O que é 'Mitose'?", options: ["Morte celular", "Divisão celular", "Fusão nuclear", "Doença"], correct: 1, category: "ciencias", difficulty: 3, explanation: "Processo de divisão celular." },
     { question: "Quem escreveu 'A Divina Comédia'?", options: ["Dante Alighieri", "Maquiavel", "Petrarca", "Boccaccio"], correct: 0, category: "literatura", difficulty: 3, explanation: "Obra prima de Dante." },
     { question: "Qual o menor osso do corpo?", options: ["Estribo", "Martelo", "Bigorna", "Fêmur"], correct: 0, category: "ciencias", difficulty: 3, explanation: "O estribo, localizado no ouvido médio." },
-    { question: "Qual a capital da Colômbia?", options: ["Medellín", "Bogotá", "Cali", "Cartagena"], correct: 1, category: "geografia", difficulty: 3, explanation: "Bogotá." }
+    { question: "Qual a capital da Colômbia?", options: ["Medellín", "Bogotá", "Cali", "Cartagena"], correct: 1, category: "geografia", difficulty: 3, explanation: "Bogotá." },
+
+    // --- LOTE 5: 100 NOVAS PERGUNTAS FAMÍLIA/GERAL ADICIONADAS AGORA (Misturadas) ---
+    // FÁCIL
+    { question: "Qual a cor da banana madura?", options: ["Verde", "Azul", "Amarela", "Roxa"], correct: 2, category: "geral", difficulty: 1, explanation: "Bananas maduras ficam amarelas." },
+    { question: "Quantos meses tem um ano?", options: ["10", "12", "15", "20"], correct: 1, category: "geral", difficulty: 1, explanation: "Um ano possui 12 meses." },
+    { question: "O que usamos para ouvir?", options: ["Nariz", "Boca", "Ouvidos", "Mãos"], correct: 2, category: "ciencias", difficulty: 1, explanation: "Os ouvidos são os órgãos da audição." },
+    { question: "Qual animal mia?", options: ["Cachorro", "Gato", "Pato", "Vaca"], correct: 1, category: "geral", difficulty: 1, explanation: "O miado é o som do gato." },
+    { question: "O que a abelha faz?", options: ["Nada", "Voa", "Corre", "Pula"], correct: 1, category: "ciencias", difficulty: 1, explanation: "Abelhas voam para coletar néctar." },
+    { question: "Qual a cor do leite?", options: ["Preto", "Branco", "Azul", "Vermelho"], correct: 1, category: "geral", difficulty: 1, explanation: "O leite de vaca é branco." },
+    { question: "Quantas rodas tem uma bicicleta?", options: ["1", "2", "3", "4"], correct: 1, category: "geral", difficulty: 1, explanation: "Bicicletas padrão têm duas rodas." },
+    { question: "O que usamos para calçar os pés?", options: ["Chapéu", "Luva", "Sapato", "Cachecol"], correct: 2, category: "geral", difficulty: 1, explanation: "Sapatos protegem os pés." },
+    { question: "Qual a forma de uma bola de futebol?", options: ["Quadrada", "Triangular", "Redonda (Esfera)", "Plana"], correct: 2, category: "geral", difficulty: 1, explanation: "A bola é esférica." },
+    { question: "Onde o peixe vive?", options: ["Terra", "Ar", "Água", "Fogo"], correct: 2, category: "ciencias", difficulty: 1, explanation: "Peixes são animais aquáticos." },
+    { question: "O que usamos para escrever no quadro negro?", options: ["Lápis", "Giz", "Caneta", "Pincel"], correct: 1, category: "geral", difficulty: 1, explanation: "Giz é usado em quadros negros." },
+    { question: "Qual a cor do tomate?", options: ["Azul", "Verde", "Vermelho", "Preto"], correct: 2, category: "geral", difficulty: 1, explanation: "Tomates maduros são vermelhos." },
+    { question: "Quantos dedos temos em um pé?", options: ["5", "10", "2", "1"], correct: 0, category: "ciencias", difficulty: 1, explanation: "Temos 5 dedos em cada pé." },
+    { question: "Qual o dia depois de sexta-feira?", options: ["Domingo", "Segunda", "Sábado", "Quarta"], correct: 2, category: "geral", difficulty: 1, explanation: "Sábado vem após a sexta." },
+    { question: "O que o bombeiro apaga?", options: ["Luz", "Fogo", "Água", "Vento"], correct: 1, category: "geral", difficulty: 1, explanation: "Bombeiros combatem incêndios." },
+    { question: "Qual a cor da cenoura?", options: ["Azul", "Laranja", "Roxa", "Verde"], correct: 1, category: "geral", difficulty: 1, explanation: "Cenouras comuns são laranjas." },
+    { question: "Onde dormimos?", options: ["Mesa", "Cadeira", "Cama", "Fogão"], correct: 2, category: "geral", difficulty: 1, explanation: "Camas são feitas para dormir." },
+    { question: "O que usamos para pentear o cabelo?", options: ["Escova/Pente", "Garfo", "Colher", "Faca"], correct: 0, category: "geral", difficulty: 1, explanation: "Usamos pente ou escova." },
+    { question: "Qual animal tem pescoço comprido?", options: ["Elefante", "Girafa", "Leão", "Zebra"], correct: 1, category: "ciencias", difficulty: 1, explanation: "A girafa é famosa pelo pescoço longo." },
+    { question: "O que bebemos quando temos sede?", options: ["Pão", "Água", "Areia", "Pedra"], correct: 1, category: "geral", difficulty: 1, explanation: "Água hidrata o corpo." },
+    { question: "Qual a cor do carvão?", options: ["Branco", "Azul", "Preto", "Amarelo"], correct: 2, category: "geral", difficulty: 1, explanation: "Carvão é preto." },
+    { question: "O que usamos para ligar a TV?", options: ["Controle remoto", "Sapato", "Livro", "Copo"], correct: 0, category: "geral", difficulty: 1, explanation: "O controle remoto opera a TV." },
+    { question: "Qual estação é muito fria?", options: ["Verão", "Inverno", "Primavera", "Outono"], correct: 1, category: "geral", difficulty: 1, explanation: "O inverno é a estação do frio." },
+    { question: "O que o padeiro faz?", options: ["Sapato", "Pão", "Carro", "Casa"], correct: 1, category: "geral", difficulty: 1, explanation: "Padeiros fazem pão." },
+    { question: "Qual a cor da neve?", options: ["Preta", "Verde", "Branca", "Azul"], correct: 2, category: "geral", difficulty: 1, explanation: "Neve limpa é branca." },
+    { question: "O que usamos para ver filmes no cinema?", options: ["Tela grande", "Espelho", "Janela", "Relógio"], correct: 0, category: "geral", difficulty: 1, explanation: "Cinemas usam telas de projeção." },
+    { question: "Qual animal pula e carrega o filhote na bolsa?", options: ["Cachorro", "Gato", "Canguru", "Cavalo"], correct: 2, category: "ciencias", difficulty: 1, explanation: "Cangurus são marsupiais." },
+    { question: "O que a galinha come?", options: ["Milho", "Pedra", "Vidro", "Ferro"], correct: 0, category: "ciencias", difficulty: 1, explanation: "Milho é um alimento comum para galinhas." },
+    { question: "Qual a cor do chocolate ao leite?", options: ["Branco", "Marrom", "Azul", "Verde"], correct: 1, category: "geral", difficulty: 1, explanation: "Chocolate ao leite é marrom." },
+    { question: "O que usamos para lavar as mãos?", options: ["Terra", "Água e Sabão", "Óleo", "Cola"], correct: 1, category: "geral", difficulty: 1, explanation: "Higiene básica requer água e sabão." },
+    { question: "Qual a cor da uva roxa?", options: ["Amarela", "Verde", "Roxa", "Azul"], correct: 2, category: "geral", difficulty: 1, explanation: "A uva roxa é... roxa." },
+    { question: "O que o professor faz?", options: ["Conserta carros", "Ensina", "Vende pão", "Pinta casas"], correct: 1, category: "geral", difficulty: 1, explanation: "Professores ensinam alunos." },
+    { question: "Qual animal é o melhor amigo do homem?", options: ["Gato", "Cachorro", "Passarinho", "Peixe"], correct: 1, category: "cultura", difficulty: 1, explanation: "O cachorro é conhecido por esse título." },
+    { question: "O que usamos para falar ao longe?", options: ["Telefone", "Sapato", "Pedra", "Livro"], correct: 0, category: "geral", difficulty: 1, explanation: "Telefones permitem comunicação à distância." },
+
+    // MÉDIO
+    { question: "Quantos anos tem uma década?", options: ["5", "10", "20", "50"], correct: 1, category: "geral", difficulty: 2, explanation: "Uma década são 10 anos." },
+    { question: "Qual a capital da Espanha?", options: ["Barcelona", "Sevilha", "Madri", "Valência"], correct: 2, category: "geografia", difficulty: 2, explanation: "Madri é a capital." },
+    { question: "O que é um 'reptil'?", options: ["Cobra", "Sapo", "Peixe", "Pássaro"], correct: 0, category: "ciencias", difficulty: 2, explanation: "Cobras são répteis." },
+    { question: "Quem pintou 'O Grito'?", options: ["Munch", "Van Gogh", "Picasso", "Dali"], correct: 0, category: "arte", difficulty: 2, explanation: "Edvard Munch." },
+    { question: "Qual o maior mamífero do mundo?", options: ["Elefante", "Baleia Azul", "Girafa", "Rinoceronte"], correct: 1, category: "ciencias", difficulty: 2, explanation: "A baleia azul é o maior animal existente." },
+    { question: "Qual a capital da Argentina?", options: ["Rosário", "Buenos Aires", "Mendoza", "Córdoba"], correct: 1, category: "geografia", difficulty: 2, explanation: "Buenos Aires." },
+    { question: "O que é Hélio?", options: ["Um gás", "Um metal", "Um líquido", "Uma pedra"], correct: 0, category: "ciencias", difficulty: 2, explanation: "Hélio é um gás nobre." },
+    { question: "Quantas cordas tem um violino?", options: ["3", "4", "5", "6"], correct: 1, category: "musica", difficulty: 2, explanation: "Violinos têm 4 cordas." },
+    { question: "Qual o símbolo do Sódio?", options: ["So", "Na", "Si", "S"], correct: 1, category: "ciencias", difficulty: 2, explanation: "Na (Natrium)." },
+    { question: "Quem escreveu 'O Pequeno Príncipe'?", options: ["Saint-Exupéry", "Verne", "Hugo", "Dumas"], correct: 0, category: "literatura", difficulty: 2, explanation: "Antoine de Saint-Exupéry." },
+    { question: "Qual a capital do Chile?", options: ["Santiago", "Valparaíso", "Concepción", "Arica"], correct: 0, category: "geografia", difficulty: 2, explanation: "Santiago." },
+    { question: "O que é um 'anfíbio'?", options: ["Sapo", "Cobra", "Peixe", "Leão"], correct: 0, category: "ciencias", difficulty: 2, explanation: "Sapos vivem na água e na terra (anfíbios)." },
+    { question: "Quantos jogadores num time de basquete?", options: ["5", "6", "7", "11"], correct: 0, category: "esportes", difficulty: 2, explanation: "5 jogadores em quadra." },
+    { question: "Qual a capital da Rússia?", options: ["São Petersburgo", "Moscou", "Kazan", "Sochi"], correct: 1, category: "geografia", difficulty: 2, explanation: "Moscou." },
+    { question: "O que é a 'Via Láctea'?", options: ["Um chocolate", "Nossa Galáxia", "Uma estrada", "Um planeta"], correct: 1, category: "ciencias", difficulty: 2, explanation: "Nome da galáxia onde está o Sistema Solar." },
+    { question: "Quem descobriu a gravidade (maçã)?", options: ["Einstein", "Newton", "Galileu", "Tesla"], correct: 1, category: "ciencias", difficulty: 2, explanation: "Isaac Newton." },
+    { question: "Qual a capital do Peru?", options: ["Cusco", "Lima", "Arequipa", "Trujillo"], correct: 1, category: "geografia", difficulty: 2, explanation: "Lima." },
+    { question: "O que é 'bossa nova'?", options: ["Dança", "Gênero musical", "Comida", "Roupa"], correct: 1, category: "musica", difficulty: 2, explanation: "Estilo musical brasileiro." },
+    { question: "Qual o maior órgão do corpo humano?", options: ["Fígado", "Pele", "Coração", "Pulmão"], correct: 1, category: "ciencias", difficulty: 2, explanation: "A pele é o maior órgão." },
+    { question: "Quem pintou 'Guernica'?", options: ["Picasso", "Dali", "Miro", "Goya"], correct: 0, category: "arte", difficulty: 2, explanation: "Pablo Picasso." },
+    { question: "Qual a capital do México?", options: ["Cancún", "Cidade do México", "Guadalajara", "Monterrey"], correct: 1, category: "geografia", difficulty: 2, explanation: "Cidade do México." },
+    { question: "O que é um 'tsunami'?", options: ["Vento forte", "Onda gigante", "Terremoto", "Vulcão"], correct: 1, category: "geografia", difficulty: 2, explanation: "Onda causada por deslocamento de água." },
+    { question: "Quantos anéis tem o símbolo olímpico?", options: ["4", "5", "6", "7"], correct: 1, category: "esportes", difficulty: 2, explanation: "5 anéis entrelaçados." },
+    { question: "Qual a capital da Índia?", options: ["Mumbai", "Nova Delhi", "Calcutá", "Bangalore"], correct: 1, category: "geografia", difficulty: 2, explanation: "Nova Delhi." },
+    { question: "Quem escreveu 'Romeu e Julieta'?", options: ["Shakespeare", "Dickens", "Twain", "Austen"], correct: 0, category: "literatura", difficulty: 2, explanation: "William Shakespeare." },
+    { question: "Qual o metal mais precioso?", options: ["Ouro", "Prata", "Ródio", "Cobre"], correct: 2, category: "ciencias", difficulty: 2, explanation: "Ródio é frequentemente mais valioso que ouro." },
+    { question: "Qual a capital da Noruega?", options: ["Oslo", "Estocolmo", "Helsinque", "Copenhague"], correct: 0, category: "geografia", difficulty: 2, explanation: "Oslo." },
+    { question: "O que é 'jazz'?", options: ["Gênero musical", "Dança", "Pintura", "Esporte"], correct: 0, category: "musica", difficulty: 2, explanation: "Estilo musical originado nos EUA." },
+    { question: "Quantos ossos tem o corpo humano adulto?", options: ["200", "206", "210", "215"], correct: 1, category: "ciencias", difficulty: 2, explanation: "206 ossos." },
+    { question: "Qual a capital da Suécia?", options: ["Oslo", "Estocolmo", "Helsinque", "Copenhague"], correct: 1, category: "geografia", difficulty: 2, explanation: "Estocolmo." },
+    { question: "O que é 'haiku'?", options: ["Luta", "Poema japonês", "Comida", "Roupa"], correct: 1, category: "literatura", difficulty: 2, explanation: "Forma de poesia japonesa." },
+    { question: "Quem dirigiu 'O Poderoso Chefão'?", options: ["Coppola", "Scorsese", "Spielberg", "Tarantino"], correct: 0, category: "filmes", difficulty: 2, explanation: "Francis Ford Coppola." },
+    { question: "Qual a capital da Bélgica?", options: ["Bruxelas", "Antuérpia", "Ghent", "Bruges"], correct: 0, category: "geografia", difficulty: 2, explanation: "Bruxelas." },
+
+    // DIFÍCIL
+    { question: "Qual a capital da Mongólia?", options: ["Ulan Bator", "Astana", "Bishkek", "Tashkent"], correct: 0, category: "geografia", difficulty: 3, explanation: "Ulan Bator." },
+    { question: "Quem descobriu o Raio-X?", options: ["Roentgen", "Curie", "Edison", "Tesla"], correct: 0, category: "ciencias", difficulty: 3, explanation: "Wilhelm Roentgen." },
+    { question: "Qual a guerra mais longa da história?", options: ["Guerra dos 100 Anos", "Guerra dos 335 Anos", "Cruzadas", "Reconquista"], correct: 1, category: "historia", difficulty: 3, explanation: "Guerra dos 335 Anos (sem sangue)." },
+    { question: "Quem escreveu 'Ulysses'?", options: ["Joyce", "Woolf", "Hemingway", "Faulkner"], correct: 0, category: "literatura", difficulty: 3, explanation: "James Joyce." },
+    { question: "Qual o elemento químico 'W'?", options: ["Tungstênio", "Wolframio", "Ambos", "Nenhum"], correct: 2, category: "ciencias", difficulty: 3, explanation: "W é Tungstênio (Wolframio em alemão)." },
+    { question: "Qual a capital do Vietnã?", options: ["Ho Chi Minh", "Hanói", "Da Nang", "Hue"], correct: 1, category: "geografia", difficulty: 3, explanation: "Hanói." },
+    { question: "Quem compôs 'O Lago dos Cisnes'?", options: ["Tchaikovsky", "Stravinsky", "Prokofiev", "Rachmaninoff"], correct: 0, category: "musica", difficulty: 3, explanation: "Pyotr Ilyich Tchaikovsky." },
+    { question: "Qual a profundidade média do oceano?", options: ["1km", "3.7km", "5km", "10km"], correct: 1, category: "geografia", difficulty: 3, explanation: "Aprox. 3.700 metros." },
+    { question: "Quem foi o último Czar da Rússia?", options: ["Nicolau II", "Pedro I", "Ivan IV", "Alexandre II"], correct: 0, category: "historia", difficulty: 3, explanation: "Nicolau II." },
+    { question: "Qual a capital do Paquistão?", options: ["Karachi", "Lahore", "Islamabad", "Peshawar"], correct: 2, category: "geografia", difficulty: 3, explanation: "Islamabad." },
+    { question: "O que é 'Entropia'?", options: ["Ordem", "Desordem", "Energia", "Calor"], correct: 1, category: "ciencias", difficulty: 3, explanation: "Medida da desordem de um sistema." },
+    { question: "Quem pintou 'O Nascimento de Vênus'?", options: ["Botticelli", "Da Vinci", "Michelangelo", "Rafael"], correct: 0, category: "arte", difficulty: 3, explanation: "Sandro Botticelli." },
+    { question: "Qual a capital da Nigéria?", options: ["Lagos", "Abuja", "Kano", "Ibadan"], correct: 1, category: "geografia", difficulty: 3, explanation: "Abuja (desde 1991)." },
+    { question: "O que é 'bóson de Higgs'?", options: ["Partícula de Deus", "Vírus", "Estrela", "Planeta"], correct: 0, category: "ciencias", difficulty: 3, explanation: "Partícula fundamental da física." },
+    { question: "Quem escreveu 'Cem Anos de Solidão'?", options: ["Márquez", "Borges", "Cortázar", "Neruda"], correct: 0, category: "literatura", difficulty: 3, explanation: "Gabriel García Márquez." },
+    { question: "Qual a capital da Arábia Saudita?", options: ["Jeddah", "Riad", "Mecca", "Medina"], correct: 1, category: "geografia", difficulty: 3, explanation: "Riad." },
+    { question: "Quem foi o primeiro homem no espaço?", options: ["Armstrong", "Gagarin", "Glenn", "Shepard"], correct: 1, category: "historia", difficulty: 3, explanation: "Yuri Gagarin." },
+    { question: "Qual o pH da água pura?", options: ["5", "6", "7", "8"], correct: 2, category: "ciencias", difficulty: 3, explanation: "7 (Neutro)." },
+    { question: "Qual a capital da Etiópia?", options: ["Adis Abeba", "Nairóbi", "Cartum", "Mogadíscio"], correct: 0, category: "geografia", difficulty: 3, explanation: "Adis Abeba." },
+    { question: "Quem compôs a ópera 'Carmen'?", options: ["Bizet", "Verdi", "Puccini", "Mozart"], correct: 0, category: "musica", difficulty: 3, explanation: "Georges Bizet." },
+    { question: "Qual o elemento mais denso?", options: ["Ósmio", "Chumbo", "Ouro", "Mercúrio"], correct: 0, category: "ciencias", difficulty: 3, explanation: "Ósmio é o elemento natural mais denso." },
+    { question: "Qual a capital do Irã?", options: ["Bagdá", "Teerã", "Cabul", "Damasco"], correct: 1, category: "geografia", difficulty: 3, explanation: "Teerã." },
+    { question: "Quem escreveu 'O Grande Gatsby'?", options: ["Fitzgerald", "Hemingway", "Steinbeck", "Faulkner"], correct: 0, category: "literatura", difficulty: 3, explanation: "F. Scott Fitzgerald." },
+    { question: "Qual a capital da Hungria?", options: ["Viena", "Praga", "Budapeste", "Varsóvia"], correct: 2, category: "geografia", difficulty: 3, explanation: "Budapeste." },
+    { question: "O que é 'antimatéria'?", options: ["Matéria escura", "Oposto da matéria", "Energia pura", "Vácuo"], correct: 1, category: "ciencias", difficulty: 3, explanation: "Matéria composta por antipartículas." },
+    { question: "Quem foi 'Mata Hari'?", options: ["Espiã", "Rainha", "Cientista", "Pintora"], correct: 0, category: "historia", difficulty: 3, explanation: "Dançarina e espiã na 1ª Guerra." },
+    { question: "Qual a capital da Finlândia?", options: ["Helsinque", "Oslo", "Estocolmo", "Copenhague"], correct: 0, category: "geografia", difficulty: 3, explanation: "Helsinque." },
+    { question: "O que estuda a 'Ontologia'?", options: ["Ser/Existência", "Insetos", "Câncer", "Linguagem"], correct: 0, category: "cultura", difficulty: 3, explanation: "Ramo da filosofia sobre a natureza do ser." },
+    { question: "Quem dirigiu '2001: Uma Odisseia no Espaço'?", options: ["Kubrick", "Spielberg", "Lucas", "Scott"], correct: 0, category: "filmes", difficulty: 3, explanation: "Stanley Kubrick." },
+    { question: "Qual a capital da Polônia?", options: ["Cracóvia", "Varsóvia", "Gdansk", "Poznan"], correct: 1, category: "geografia", difficulty: 3, explanation: "Varsóvia." },
+    { question: "Qual o segundo planeta do sistema solar?", options: ["Vênus", "Marte", "Terra", "Mercúrio"], correct: 0, category: "ciencias", difficulty: 3, explanation: "Mercúrio, Vênus, Terra..." },
+    { question: "Quem escreveu 'Fausto'?", options: ["Goethe", "Schiller", "Kafka", "Mann"], correct: 0, category: "literatura", difficulty: 3, explanation: "Johann Wolfgang von Goethe." },
+    { question: "Qual a capital da Romênia?", options: ["Bucareste", "Budapeste", "Sófia", "Belgrado"], correct: 0, category: "geografia", difficulty: 3, explanation: "Bucareste." }
 ];
 
 // --- Lista de Prêmios (Escada de 1 a 15) ---
@@ -383,6 +376,7 @@ const screenGame = document.getElementById('game-screen');
 const screenEnd = document.getElementById('end-screen');
 const feedbackOverlay = document.getElementById('feedback-overlay');
 const exitOverlay = document.getElementById('exit-overlay');
+const toastEl = document.getElementById('game-toast'); // Toast Element
 
 const questionText = document.getElementById('question-text');
 const optionsContainer = document.getElementById('options-container');
@@ -456,7 +450,23 @@ function startGame(mode) {
     renderPrizeList();
     
     switchScreen(screenGame);
+    showGameToast(); // Mostra o aviso rápido
     loadQuestion();
+}
+
+function showGameToast() {
+    toastEl.classList.remove('hidden');
+    // Força reflow
+    void toastEl.offsetWidth;
+    toastEl.classList.add('visible');
+
+    // Esconde depois de 3.5 segundos
+    setTimeout(() => {
+        toastEl.classList.remove('visible');
+        setTimeout(() => {
+            toastEl.classList.add('hidden');
+        }, 500); // Tempo da transição CSS
+    }, 3500);
 }
 
 function showAbout() {
