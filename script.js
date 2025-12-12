@@ -2949,47 +2949,36 @@ const finalPrizeEl = document.getElementById('final-prize');
 // --- Funções Principais ---
 
 function startGame(mode) {
+    let selectedQuestions = [];
     let pool = [];
 
-    // 1. Filtrar o banco de perguntas baseado no modo
+    // 1. CONFIGURAÇÃO DOS MODOS
     if (mode === 'tech') {
+        // Modo TI: Pega tudo de TI e embaralha
         pool = allQuestions.filter(q => q.category === 'ti');
+        selectedQuestions = pool.sort(() => 0.5 - Math.random());
+
     } else if (mode === 'hardcore') {
-        // Modo Hardcore: Filtra perguntas de dificuldade 3 ou a categoria hardcore
-        // Como o usuário pediu apenas 1 pergunta por enquanto, este filtro garantirá que ela apareça
+        // Modo Hardcore: Pega categoria 'hardcore' OU dificuldade 3 e 4
+        // MUDANÇA AQUI: Embaralha tudo junto de uma vez só!
         pool = allQuestions.filter(q => q.category === 'hardcore' || q.difficulty >= 3);
+        selectedQuestions = pool.sort(() => 0.5 - Math.random());
+
     } else {
-        // Modo Família (Tudim misturado): REMOVE TI COMPLETAMENTE
+        // Modo Família (Padrão): Remove TI e Hardcore
         pool = allQuestions.filter(q => q.category !== 'ti' && q.category !== 'hardcore');
-    }
 
-    let selectedQuestions = [];
-
-    if (mode === 'hardcore') {
-        // No modo hardcore, pegamos a pergunta específica 'hardcore' e completamos com as difíceis
-        const hardcoreQ = pool.filter(q => q.category === 'hardcore');
-        const otherHardQ = pool.filter(q => q.category !== 'hardcore').sort(() => 0.5 - Math.random());
-        
-        // Garante que a pergunta hardcore esteja lá, misturada com outras difíceis
-        selectedQuestions = [...hardcoreQ, ...otherHardQ];
-        // Para testes iniciais, se tiver poucas, usa o que tem. Se tiver muitas, corta em 50.
-    } else {
-        // Lógica Padrão (Família/Tech)
-        // Filtra fáceis
+        // Separa fáceis e difíceis
         const easyPool = pool.filter(q => q.difficulty === 1).sort(() => 0.5 - Math.random());
-        
-        // Filtra médias e difíceis e mistura tudo num saco só
         const hardPool = pool.filter(q => q.difficulty > 1).sort(() => 0.5 - Math.random());
         
-        // Pega 5 fáceis
+        // Pega 5 fáceis + 45 difíceis
         const qEasy = easyPool.slice(0, 5);
-        
-        // Pega 45 do resto (médio/difícil)
         const qRest = hardPool.slice(0, 45);
 
         selectedQuestions = [...qEasy, ...qRest];
 
-        // Fallback se não tiver 50 perguntas
+        // Fallback: Se não der 50, completa com o que sobrou
         if (selectedQuestions.length < 50) {
             const needed = 50 - selectedQuestions.length;
             const remaining = pool.filter(q => !selectedQuestions.includes(q)).sort(() => 0.5 - Math.random());
@@ -2997,7 +2986,8 @@ function startGame(mode) {
         }
     }
     
-    // Garante corte em 50 (ou menos se não tiver 50 no hardcore ainda)
+    // 2. CORTE FINAL E INICIALIZAÇÃO
+    // Garante que o jogo tenha no máximo 50 perguntas
     currentQuestions = selectedQuestions.slice(0, 50);
 
     currentQuestionIndex = 0;
