@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Quiz do Bruno</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="app-container">
+        <!-- Tela Inicial -->
+        <section id="start-screen" class="screen active">
+            <div class="logo-area">
+                <div class="icon-logo">🔺</div>
+                <h1>Quiz do Bruno</h1>
+                <p class="intro-text">Opa, bão? Chega mais pra testar seus conhecimentos, uai!</p>
+            </div>
+            
+            <div class="button-group">
+                <button class="btn btn-primary btn-lg" onclick="startGame('family')">
+                    <span class="icon">☕</span>
+                    <div class="btn-text">
+                        <strong>Jogar em Família</strong>
+                        <span>Tudim misturado (Sem TI)</span>
+                    </div>
+                </button>
+                <button class="btn btn-tech btn-lg" onclick="startGame('tech')">
+                    <span class="icon">💻</span>
+                    <div class="btn-text">
+                        <strong>Modo TI/Programação</strong>
+                        <span>Só pros dev raiz</span>
+                    </div>
+                </button>
+                <button class="btn btn-info btn-lg" onclick="showAbout()">
+                    <span class="icon">ℹ️</span>
+                    <div class="btn-text">
+                        <strong>Sobre o Jogo</strong>
+                        <span>Curiosidades e Estatísticas</span>
+                    </div>
+                </button>
+            </div>
+            <footer class="start-footer">
+                Criado com carinho e pão de queijo.
+            </footer>
+        </section>
+
+        <!-- Tela Sobre -->
+        <section id="about-screen" class="screen">
+            <header class="game-header">
+                <button class="btn-icon" onclick="goToHome()" aria-label="Voltar">
+                    ⬅️
+                </button>
+                <h2 style="font-size: 1.2rem; color: var(--text-main);">Sobre o Jogo</h2>
+            </header>
+            <div class="about-content">
+                <div class="about-card">
+                    <h3>📚 Acervo do Quiz</h3>
+                    <p>Este jogo foi desenvolvido para testar conhecimentos gerais e técnicos com um toque mineiro!</p>
+                    
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-number" id="total-questions-count">0</span>
+                            <span class="stat-label">Perguntas Totais</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" id="tech-questions-count">0</span>
+                            <span class="stat-label">Perguntas de TI</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" id="family-questions-count">0</span>
+                            <span class="stat-label">Variedades</span>
+                        </div>
+                    </div>
+
+                    <h4 style="margin-top: 20px; color: var(--secondary-color);">Categorias Disponíveis:</h4>
+                    <ul class="categories-list">
+                        <li>🔺 Minas Gerais</li>
+                        <li>💻 Tecnologia & Programação</li>
+                        <li>🌍 Geografia & História</li>
+                        <li>🧪 Ciências & Matemática</li>
+                        <li>🎬 Filmes, Música & Cultura Pop</li>
+                        <li>⚽ Esportes</li>
+                    </ul>
+                </div>
+                <button class="btn btn-primary" onclick="goToHome()" style="margin-top: 20px;">Voltar ao Menu</button>
+            </div>
+        </section>
+
+        <!-- Tela do Jogo -->
+        <section id="game-screen" class="screen">
+            <!-- Cabeçalho do Jogo (Mobile friendly) -->
+            <header class="game-header">
+                <button class="btn-icon" onclick="showExitModal()" aria-label="Sair do jogo">
+                    ✖
+                </button>
+                <div class="progress-info">
+                    <span class="category-badge" id="category-badge">Geral</span>
+                    <span class="prize-tag" id="current-prize-display">Prêmio: 1 Pão de Queijo</span>
+                </div>
+            </header>
+
+            <!-- Aviso Rápido (Toast) -->
+            <div id="game-toast" class="toast hidden">
+                ⚠️ As perguntas são misturadas: Fácil, Médio e Difícil!
+            </div>
+
+            <div class="game-layout">
+                <!-- Barra Lateral de Prêmios (Visível apenas em Desktop) -->
+                <aside class="prize-ladder-container desktop-only">
+                    <h3>Escada de Prêmios</h3>
+                    <ul id="prize-list">
+                        <!-- Gerado via JS -->
+                    </ul>
+                </aside>
+
+                <!-- Área Principal -->
+                <div class="question-area">
+                    <div class="question-card">
+                        <!-- Novo Indicador de Progresso Imersivo -->
+                        <div class="question-meta">
+                            <div class="level-display">
+                                <span class="level-label">NÍVEL</span>
+                                <div class="level-number-box">
+                                    <span id="current-level-anim">1</span>
+                                    <span class="level-total">/15</span>
+                                </div>
+                            </div>
+                            <div class="progress-track">
+                                <div class="progress-fill" id="progress-fill"></div>
+                            </div>
+                        </div>
+                        <h2 id="question-text">Carregando pergunta...</h2>
+                    </div>
+
+                    <div class="options-grid" id="options-container">
+                        <!-- Botões gerados via JS -->
+                    </div>
+
+                    <div class="lifelines-area"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Overlay de Confirmação de Saída -->
+        <div id="exit-overlay" class="overlay hidden">
+            <div class="modal-card">
+                <h3>Uai, já vai? 🥺</h3>
+                <p>Se sair agora, cê perde todo o progresso e o pão de queijo esfria!</p>
+                <div class="modal-actions">
+                    <button class="btn btn-ghost" onclick="hideExitModal()">Voltar pro Jogo</button>
+                    <button class="btn btn-danger" onclick="confirmExitAction()">Sair Mesmo</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Overlay de Feedback (Acerto/Erro) -->
+        <div id="feedback-overlay" class="overlay hidden">
+            <div class="feedback-card">
+                <div class="feedback-icon" id="feedback-icon">✅</div>
+                <h2 id="feedback-title">Resposta Certa!</h2>
+                <div class="feedback-content">
+                    <p id="feedback-correct-answer" class="hidden">A resposta certa era: <strong>X</strong></p>
+                    <div class="explanation-box">
+                        <p id="feedback-explanation">Explicação aqui.</p>
+                    </div>
+                </div>
+                <button class="btn btn-primary" id="btn-next-q" onclick="nextQuestion()">Continuar</button>
+            </div>
+        </div>
+
+        <!-- Tela Final -->
+        <section id="end-screen" class="screen">
+            <div class="result-box">
+                <div class="result-icon" id="end-icon">🏆</div>
+                <h1 id="end-title">Fim de Jogo!</h1>
+                <p id="end-message">Vamo ver o que cê arrumou...</p>
+                
+                <div class="score-card">
+                    <p class="score-label">Você conquistou:</p>
+                    <h2 id="final-prize">Um aperto de mão</h2>
+                </div>
+
+                <div class="button-group">
+                    <button class="btn btn-primary" onclick="goToHome()">
+                        🔄 Jogar Novamente
+                    </button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
