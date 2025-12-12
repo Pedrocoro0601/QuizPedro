@@ -2048,7 +2048,139 @@ const allQuestions = [
     { question: "Quem foi Puccini?", options: ["Pintor", "Compositor de ópera (Turandot)", "Escritor", "Cientista"], correct: 1, category: "musica", difficulty: 3, explanation: "Nessun Dorma." },
     { question: "Qual a capital do Senegal?", options: ["Acra", "Dakar", "Bissau", "Conacri"], correct: 1, category: "geografia", difficulty: 2, explanation: "Dakar." },
     { question: "O que é 'hóquei na grama'?", options: ["Golf", "Esporte com taco e bola na grama", "Futebol", "Tênis"], correct: 1, category: "esportes", difficulty: 2, explanation: "Esporte olímpico." },
-    { question: "Qual a capital de Camarões?", options: ["Douala", "Yaoundé", "Libreville", "Abuja"], correct: 1, category: "geografia", difficulty: 3, explanation: "Yaoundé." }
+    { question: "Qual a capital de Camarões?", options: ["Douala", "Yaoundé", "Libreville", "Abuja"], correct: 1, category: "geografia", difficulty: 3, explanation: "Yaoundé." },
+
+    { question: "Em Ciência da Computação, o que o problema do milênio 'P vs NP' questiona essencialmente?", options: ["Se todo problema com solução verificável rapidamente também pode ser resolvido rapidamente", "Se computadores quânticos substituirão os clássicos", "Se é possível criar inteligência artificial consciente", "Se a criptografia RSA é inquebrável"], correct: 0, category: "hardcore", difficulty: 4, explanation: "É um dos 7 Problemas do Milênio. Pergunta se problemas que podem ser verificados em tempo polinomial (NP) também podem ser resolvidos em tempo polinomial (P)." },
+    { question: "No contexto de Bancos de Dados, o que garante a propriedade 'Atomicidade' do ACID?", options: ["Que os dados sejam criptografados", "Que uma transação seja tudo ou nada", "Que o banco seja rápido", "Que múltiplos usuários acessem ao mesmo tempo"], correct: 1, category: "ti", difficulty: 3, explanation: "Atomicidade garante que todas as operações de uma transação sejam concluídas com sucesso ou nenhuma delas seja." },
+    { question: "O que é o 'Teorema CAP' em sistemas distribuídos?", options: ["Consistência, Disponibilidade, Tolerância a Partição", "Código, Algoritmo, Processo", "Cloud, API, Platform", "Cache, Authorization, Protocol"], correct: 0, category: "ti", difficulty: 4, explanation: "Afirma que é impossível garantir simultaneamente as três propriedades (Consistency, Availability, Partition Tolerance)." },
+    { question: "Qual a complexidade de tempo (Big O) média do algoritmo QuickSort?", options: ["O(n)", "O(n²)", "O(n log n)", "O(log n)"], correct: 2, category: "ti", difficulty: 3, explanation: "Na média é O(n log n), embora no pior caso seja O(n²)." },
+    { question: "O que é um ataque 'Man-in-the-Middle'?", options: ["Ataque físico ao servidor", "Interceptação de comunicação entre duas partes", "Vírus que apaga o HD", "Erro de DNS"], correct: 1, category: "ti", difficulty: 3, explanation: "O atacante se posiciona entre a vítima e o servidor para interceptar dados." },
+    { question: "O que significa o código de status HTTP 418?", options: ["Bad Request", "I'm a teapot", "Forbidden", "Server Error"], correct: 1, category: "ti", difficulty: 4, explanation: "Uma piada de 1º de abril de 1998 (RFC 2324), 'Eu sou um bule de chá'." },
+    { question: "Em arquitetura de microsserviços, o que é 'Circuit Breaker'?", options: ["Um fusível físico", "Padrão para impedir falhas em cascata", "Ferramenta de teste", "Protocolo de rede"], correct: 1, category: "ti", difficulty: 4, explanation: "Padrão que interrompe chamadas a um serviço falho para evitar sobrecarga do sistema." },
+    { question: "O que é 'Currying' em Programação Funcional?", options: ["Temperar o código", "Transformar função de múltiplos argumentos em cadeia de unárias", "Criar loops infinitos", "Gerenciamento de memória"], correct: 1, category: "ti", difficulty: 4, explanation: "Transforma f(a,b) em f(a)(b)." },
+    { question: "Qual a diferença principal entre TCP e UDP?", options: ["UDP é mais seguro", "TCP garante entrega e ordem, UDP não", "TCP é para vídeos apenas", "Não há diferença"], correct: 1, category: "ti", difficulty: 3, explanation: "TCP é orientado a conexão e confiável; UDP é 'best effort' e mais rápido." },
+    { question: "O que é 'Deadlock'?", options: ["Tela azul da morte", "Impasse onde processos esperam recursos um do outro", "Fim da execução", "Bloqueio de segurança"], correct: 1, category: "ti", difficulty: 3, explanation: "Processo A espera recurso de B, e B espera recurso de A." },
+    { question: "O que é 'Sharding' em banco de dados?", options: ["Criptografia", "Particionamento horizontal dos dados", "Backup em fita", "Compressão de imagens"], correct: 1, category: "ti", difficulty: 3, explanation: "Distribui dados em várias máquinas para melhorar a escalabilidade." },
+    { question: "O que o comando 'git bisect' faz?", options: ["Deleta o repositório", "Busca binária para encontrar o commit que introduziu um bug", "Mescla branches", "Limpa o histórico"], correct: 1, category: "ti", difficulty: 4, explanation: "Ferramenta poderosa para debugar regressões no código." },
+    { question: "O que é 'Idempotência' em APIs REST?", options: ["Segurança máxima", "Executar a mesma operação N vezes tem o mesmo efeito que 1 vez", "Alta velocidade", "Autenticação dupla"], correct: 1, category: "ti", difficulty: 3, explanation: "Ex: Fazer um PUT com os mesmos dados várias vezes não altera o resultado final além da primeira." },
+    { question: "Qual porta padrão é usada pelo protocolo SSH?", options: ["80", "21", "22", "443"], correct: 2, category: "ti", difficulty: 2, explanation: "Porta 22." },
+    { question: "O que é 'Race Condition'?", options: ["Competição de hackers", "Comportamento anômalo dependente da sequência de eventos", "Teste de velocidade", "Otimização de hardware"], correct: 1, category: "ti", difficulty: 3, explanation: "Falha quando a saída depende da ordem incontrolável de eventos (ex: threads)." },
+    { question: "O que é 'Zero-Day Exploit'?", options: ["Ataque em dia de feriado", "Ataque que explora falha antes de haver correção", "Vírus inofensivo", "Reiniciar servidor"], correct: 1, category: "ti", difficulty: 3, explanation: "A vulnerabilidade é explorada no 'dia zero' de conhecimento dos desenvolvedores." },
+    { question: "Em Java, qual a diferença entre 'String' e 'StringBuilder'?", options: ["Nenhuma", "String é imutável, StringBuilder é mutável", "String é mais rápido", "StringBuilder é depreciado"], correct: 1, category: "ti", difficulty: 3, explanation: "String cria novos objetos a cada concatenação; StringBuilder modifica o mesmo objeto." },
+    { question: "O que é 'Dependency Injection'?", options: ["Injeção de vacina", "Padrão onde dependências são fornecidas externamente", "Erro de compilação", "Instalação manual de libs"], correct: 1, category: "ti", difficulty: 3, explanation: "Facilita testes e desacoplamento (Inversão de Controle)." },
+    { question: "O que é um 'Singleton'?", options: ["Variável simples", "Padrão que permite apenas uma instância de uma classe", "Servidor único", "Linguagem de tom único"], correct: 1, category: "ti", difficulty: 2, explanation: "Garante existência única de um objeto no sistema." },
+    { question: "O que é 'Tree Shaking'?", options: ["Animação de árvore", "Remoção de código morto no bundle final", "Algoritmo de busca", "Estrutura de dados"], correct: 1, category: "ti", difficulty: 3, explanation: "Otimização comum em bundlers JS para reduzir tamanho do arquivo." },
+    { question: "O que é 'Memoization'?", options: ["Decorar código", "Cachear o resultado de funções puras", "Escrever lembretes", "Vazamento de memória"], correct: 1, category: "ti", difficulty: 3, explanation: "Armazena resultados de computações caras para evitar recálculo." },
+    { question: "O que significa 'SOLID'?", options: ["Estado da matéria", "5 princípios de design de software OO", "Banco de dados robusto", "Linguagem rígida"], correct: 1, category: "ti", difficulty: 3, explanation: "Single responsibility, Open-closed, Liskov substitution, Interface segregation, Dependency inversion." },
+    { question: "Qual a função do 'Docker'?", options: ["Criar máquinas virtuais pesadas", "Containerização de aplicações", "Editor de texto", "Navegador web"], correct: 1, category: "ti", difficulty: 2, explanation: "Empacota software em containers leves e portáveis." },
+    { question: "O que é 'Blue-Green Deployment'?", options: ["Tema visual", "Técnica de deploy com dois ambientes para reduzir downtime", "Erro de tela", "Deploy manual"], correct: 1, category: "ti", difficulty: 4, explanation: "Alterna tráfego entre ambiente atual (Blue) e novo (Green)." },
+    { question: "O que é 'JWT'?", options: ["Java Web Tool", "JSON Web Token", "Just Write Text", "Join With Table"], correct: 1, category: "ti", difficulty: 2, explanation: "Padrão para troca segura de informações (autenticação)." },
+    { question: "O que é 'CORS'?", options: ["Cross-Origin Resource Sharing", "Core Operating System", "Code Optimization", "Central Online Service"], correct: 0, category: "ti", difficulty: 3, explanation: "Permite que recursos sejam solicitados de um domínio diferente." },
+    { question: "O que é 'Event Bubbling'?", options: ["Festa de lançamento", "Propagação de eventos do filho para o pai no DOM", "Erro de memória", "Animação CSS"], correct: 1, category: "ti", difficulty: 3, explanation: "O evento sobe na árvore do DOM." },
+    { question: "O que é 'Hoisting' em JavaScript?", options: ["Hospedagem", "Elevação de declarações para o topo do escopo", "Compressão de código", "Erro de sintaxe"], correct: 1, category: "ti", difficulty: 3, explanation: "Variáveis var e funções são 'içadas' antes da execução." },
+    { question: "O que é 'Polyfill'?", options: ["Massa corrida", "Código que implementa recurso faltante no navegador", "Arquivo zip", "Plugin de áudio"], correct: 1, category: "ti", difficulty: 3, explanation: "Permite usar recursos modernos em navegadores antigos." },
+    { question: "O que é 'SSR'?", options: ["Super Speed Run", "Server-Side Rendering", "Simple Style Rules", "Secure Socket Route"], correct: 1, category: "ti", difficulty: 2, explanation: "Renderização do HTML no servidor." },
+    { question: "O que é 'NoSQL'?", options: ["Sem SQL", "Not Only SQL (Não Relacional)", "Novo SQL", "SQL Negado"], correct: 1, category: "ti", difficulty: 2, explanation: "Bancos de dados flexíveis, não tabulares." },
+
+    // =========================================================================
+    // NOVAS PERGUNTAS HARDCORE (VARIEDADES GERAIS - HISTÓRIA/GEO/CIÊNCIA)
+    // =========================================================================
+
+    { question: "Qual a capital de Nauru?", options: ["Yaren", "Nauru City", "Kingston", "Não tem capital oficial"], correct: 0, category: "hardcore", difficulty: 4, explanation: "Yaren é o distrito sede do governo, mas Nauru não tem capital oficial." },
+    { question: "Qual a guerra mais curta da história?", options: ["Guerra dos Seis Dias", "Guerra Anglo-Zanzibari", "Guerra das Malvinas", "Guerra do Golfo"], correct: 1, category: "hardcore", difficulty: 3, explanation: "Durou entre 38 e 45 minutos em 1896." },
+    { question: "Qual o nome do supercontinente que existiu antes da Pangeia?", options: ["Rodínia", "Gondwana", "Laurásia", "Atlântida"], correct: 0, category: "hardcore", difficulty: 4, explanation: "Rodínia existiu há cerca de 1 bilhão de anos." },
+    { question: "Quem escreveu 'Em Busca do Tempo Perdido'?", options: ["Marcel Proust", "Victor Hugo", "Balzac", "Flaubert"], correct: 0, category: "hardcore", difficulty: 4, explanation: "Obra monumental de Proust em 7 volumes." },
+    { question: "Qual o elemento químico de número atômico 1?", options: ["Hélio", "Hidrogênio", "Lítio", "Carbono"], correct: 1, category: "hardcore", difficulty: 2, explanation: "Hidrogênio (H)." },
+    { question: "Qual a capital do Liechtenstein?", options: ["Vaduz", "Luxemburgo", "Berna", "Viena"], correct: 0, category: "hardcore", difficulty: 3, explanation: "Vaduz." },
+    { question: "O que é a 'Conjectura de Goldbach'?", options: ["Todo par > 2 é soma de dois primos", "Teoria dos buracos negros", "Fórmula da gravidade", "Lei da termodinâmica"], correct: 0, category: "hardcore", difficulty: 4, explanation: "Um dos problemas não resolvidos mais antigos da matemática." },
+    { question: "Qual a montanha mais alta do Sistema Solar?", options: ["Monte Everest", "Olympus Mons", "K2", "Mauna Kea"], correct: 1, category: "hardcore", difficulty: 3, explanation: "Fica em Marte e tem cerca de 22km de altura." },
+    { question: "Quem foi o último Czar da Rússia?", options: ["Pedro, o Grande", "Ivan, o Terrível", "Nicolau II", "Alexandre III"], correct: 2, category: "hardcore", difficulty: 3, explanation: "Nicolau II, deposto em 1917." },
+    { question: "O que estuda a 'Vexilologia'?", options: ["Selos", "Moedas", "Bandeiras", "Mapas"], correct: 2, category: "hardcore", difficulty: 4, explanation: "O estudo das bandeiras." },
+    { question: "Qual a capital do Cazaquistão (atualmente)?", options: ["Almaty", "Astana", "Tashkent", "Bishkek"], correct: 1, category: "hardcore", difficulty: 3, explanation: "Astana (chamou-se Nur-Sultan brevemente)." },
+    { question: "Quem compôs a ópera 'O Anel do Nibelungo'?", options: ["Mozart", "Wagner", "Verdi", "Bach"], correct: 1, category: "hardcore", difficulty: 4, explanation: "Richard Wagner, ciclo de 4 óperas." },
+    { question: "Qual o único mamífero capaz de voar verdadeiramente?", options: ["Esquilo voador", "Morcego", "Pinguim", "Ornitorrinco"], correct: 1, category: "hardcore", difficulty: 2, explanation: "O morcego." },
+    { question: "Qual a data da Queda da Bastilha?", options: ["4 de Julho", "14 de Julho", "1 de Maio", "15 de Novembro"], correct: 1, category: "hardcore", difficulty: 3, explanation: "14 de Julho de 1789." },
+    { question: "Quem pintou 'O Jardim das Delícias Terrenas'?", options: ["Hieronymus Bosch", "Dali", "Da Vinci", "Goya"], correct: 0, category: "hardcore", difficulty: 4, explanation: "Tríptico surrealista do século XVI." },
+    { question: "Qual o nome da moeda da Coreia do Sul?", options: ["Iene", "Yuan", "Won", "Dong"], correct: 2, category: "hardcore", difficulty: 3, explanation: "Won sul-coreano." },
+    { question: "O que é 'Obsidiana'?", options: ["Pedra preciosa", "Vidro vulcânico", "Metal raro", "Planta"], correct: 1, category: "hardcore", difficulty: 3, explanation: "Rocha ígnea extrusiva." },
+    { question: "Qual a profundidade da Fossa das Marianas?", options: ["~8km", "~11km", "~15km", "~5km"], correct: 1, category: "hardcore", difficulty: 3, explanation: "Aproximadamente 10.984 metros." },
+    { question: "Quem descobriu a Penicilina?", options: ["Pasteur", "Fleming", "Curie", "Darwin"], correct: 1, category: "hardcore", difficulty: 3, explanation: "Alexander Fleming em 1928." },
+    { question: "Qual a capital do Butão?", options: ["Catmandu", "Timbu (Thimphu)", "Lhasa", "Daca"], correct: 1, category: "hardcore", difficulty: 4, explanation: "Thimphu." },
+    { question: "O que é a 'Pedra de Roseta'?", options: ["Joia real", "Chave para decifrar hieróglifos", "Monumento asteca", "Meteorito"], correct: 1, category: "hardcore", difficulty: 3, explanation: "Permitiu a tradução dos hieróglifos egípcios." },
+    { question: "Qual o nome da espada do Rei Arthur?", options: ["Mjolnir", "Excalibur", "Gungnir", "Sting"], correct: 1, category: "hardcore", difficulty: 2, explanation: "Excalibur." },
+    { question: "Quem escreveu 'Ulisses'?", options: ["James Joyce", "Homer", "Shakespeare", "Hemingway"], correct: 0, category: "hardcore", difficulty: 4, explanation: "James Joyce (obra complexa de 1922)." },
+    { question: "Qual o país com mais fusos horários (incluindo territórios)?", options: ["Rússia", "França", "EUA", "China"], correct: 1, category: "hardcore", difficulty: 4, explanation: "A França, devido aos territórios ultramarinos (12 fusos)." },
+    { question: "O que é 'Antimatéria'?", options: ["Matéria escura", "Matéria com carga oposta", "Vácuo", "Energia pura"], correct: 1, category: "hardcore", difficulty: 3, explanation: "Partículas com massa igual mas carga oposta à matéria." },
+    { question: "Qual a capital de Burkina Faso?", options: ["Ouagadougou", "Dakar", "Lagos", "Accra"], correct: 0, category: "hardcore", difficulty: 4, explanation: "Ouagadougou." },
+    { question: "Quem foi o 'Rei Sol'?", options: ["Luís XIV", "Henrique VIII", "Carlos V", "Napoleão"], correct: 0, category: "hardcore", difficulty: 3, explanation: "Luís XIV de França." },
+    { question: "Qual o valor aproximado do Número de Euler (e)?", options: ["2.718", "3.141", "1.618", "1.414"], correct: 0, category: "hardcore", difficulty: 4, explanation: "Base dos logaritmos naturais." },
+    { question: "Qual a capital da Mongólia?", options: ["Ulan Bator", "Astana", "Pequim", "Lhasa"], correct: 0, category: "hardcore", difficulty: 3, explanation: "Ulan Bator." },
+    { question: "O que é 'Sinestesia'?", options: ["Perda de memória", "Cruzamento de sentidos", "Doença de pele", "Medo de altura"], correct: 1, category: "hardcore", difficulty: 3, explanation: "Ver sons, sentir gosto de cores, etc." },
+    { question: "Quem dirigiu 'Cidadão Kane'?", options: ["Hitchcock", "Orson Welles", "Kubrick", "Spielberg"], correct: 1, category: "hardcore", difficulty: 3, explanation: "Orson Welles." },
+    { question: "Qual o maior órgão interno do corpo humano?", options: ["Pele", "Fígado", "Pulmão", "Intestino"], correct: 1, category: "hardcore", difficulty: 3, explanation: "O Fígado (Pele é externo)." },
+    { question: "O que é um 'Fractal'?", options: ["Erro de computador", "Objeto geométrico auto-similar", "Osso quebrado", "Tipo de nuvem"], correct: 1, category: "hardcore", difficulty: 3, explanation: "Estrutura que se repete em diferentes escalas." },
+    { question: "Quem foi a primeira programadora da história?", options: ["Grace Hopper", "Ada Lovelace", "Marie Curie", "Hedy Lamarr"], correct: 1, category: "ti", difficulty: 3, explanation: "Ada Lovelace, no século XIX." },
+    { question: "Qual a capital da Nova Zelândia?", options: ["Auckland", "Wellington", "Christchurch", "Hamilton"], correct: 1, category: "hardcore", difficulty: 3, explanation: "Wellington." },
+    { question: "O que é 'Entropia'?", options: ["Energia", "Medida de desordem", "Calor", "Força"], correct: 1, category: "hardcore", difficulty: 3, explanation: "Conceito termodinâmico." },
+    { question: "Quem esculpiu 'O Êxtase de Santa Teresa'?", options: ["Bernini", "Michelangelo", "Donatello", "Rodin"], correct: 0, category: "hardcore", difficulty: 4, explanation: "Gian Lorenzo Bernini (Barroco)." },
+    { question: "Qual o nome da lua de Plutão?", options: ["Titã", "Caronte", "Europa", "Io"], correct: 1, category: "hardcore", difficulty: 4, explanation: "Caronte (Charon)." },
+    { question: "Qual a capital do Sri Lanka?", options: ["Colombo", "Sri Jayawardenepura Kotte", "Kandy", "Galle"], correct: 1, category: "hardcore", difficulty: 4, explanation: "Sri Jayawardenepura Kotte é a capital legislativa." },
+    { question: "O que é a 'Navalha de Ockham'?", options: ["Ferramenta cirúrgica", "Princípio da parcimônia (solução mais simples)", "Arma medieval", "Teorema matemático"], correct: 1, category: "hardcore", difficulty: 3, explanation: "A explicação mais simples é geralmente a correta." },
+    { question: "Qual o pH do suco gástrico?", options: ["Neutro (7)", "Muito ácido (1-2)", "Básico (10)", "Levemente ácido (5)"], correct: 1, category: "hardcore", difficulty: 3, explanation: "Ácido clorídrico forte." },
+    { question: "Quem escreveu '1984'?", options: ["Huxley", "Orwell", "Bradbury", "Asimov"], correct: 1, category: "hardcore", difficulty: 2, explanation: "George Orwell." },
+    { question: "Qual a capital da Islândia?", options: ["Nuuk", "Reykjavik", "Oslo", "Torshavn"], correct: 1, category: "hardcore", difficulty: 3, explanation: "Reykjavik." },
+    { question: "O que é 'Urobóros'?", options: ["Dragão", "Serpente engolindo a cauda", "Deus egípcio", "Constelação"], correct: 1, category: "hardcore", difficulty: 3, explanation: "Símbolo da eternidade." },
+    { question: "Qual a guerra entre Esparta e Atenas?", options: ["Guerra Médica", "Guerra do Peloponeso", "Guerra de Troia", "Guerra Púnica"], correct: 1, category: "hardcore", difficulty: 3, explanation: "Guerra do Peloponeso." },
+    { question: "Quem foi Nikola Tesla?", options: ["Inventor sérvio-americano", "Presidente da Tesla Motors", "Russo", "Astronauta"], correct: 0, category: "hardcore", difficulty: 2, explanation: "Pioneiro da corrente alternada." },
+    { question: "Qual a capital da Austrália?", options: ["Sydney", "Melbourne", "Canberra", "Brisbane"], correct: 2, category: "hardcore", difficulty: 3, explanation: "Canberra." },
+    { question: "O que é 'Semântica'?", options: ["Estudo do som", "Estudo do significado", "Gramática", "Ortografia"], correct: 1, category: "hardcore", difficulty: 3, explanation: "Significado das palavras." },
+    { question: "Qual o maior deserto do mundo?", options: ["Saara", "Antártida", "Gobi", "Kalahari"], correct: 1, category: "hardcore", difficulty: 3, explanation: "Antártida (deserto polar)." },
+    { question: "Quem compôs a 'Nona Sinfonia'?", options: ["Mozart", "Beethoven", "Bach", "Chopin"], correct: 1, category: "hardcore", difficulty: 2, explanation: "Beethoven." },
+    { question: "Qual o animal mais rápido do mundo (voo)?", options: ["Guepardo", "Falcão Peregrino", "Águia Real", "Andorinha"], correct: 1, category: "hardcore", difficulty: 3, explanation: "Falcão Peregrino (>300km/h)." },
+    { question: "Qual a capital da Etiópia?", options: ["Nairóbi", "Adis Abeba", "Mogadíscio", "Cartum"], correct: 1, category: "hardcore", difficulty: 3, explanation: "Adis Abeba." },
+    { question: "O que é 'Niilismo'?", options: ["Crença em tudo", "Negação de sentido/valor", "Religião", "Política"], correct: 1, category: "hardcore", difficulty: 3, explanation: "Filosofia cética radical." },
+    { question: "Quem pintou 'A Escola de Atenas'?", options: ["Da Vinci", "Rafael", "Michelangelo", "Donatello"], correct: 1, category: "hardcore", difficulty: 4, explanation: "Rafael Sanzio." },
+    { question: "Qual a capital da Finlândia?", options: ["Estocolmo", "Helsinque", "Oslo", "Copenhague"], correct: 1, category: "hardcore", difficulty: 3, explanation: "Helsinque." },
+    { question: "O que é 'Matéria Escura'?", options: ["Sujeira", "Matéria hipotética invisível", "Buraco negro", "Antimatéria"], correct: 1, category: "hardcore", difficulty: 3, explanation: "Compõe a maior parte da massa do universo." },
+    { question: "Qual a capital do Irã?", options: ["Bagdá", "Teerã", "Cabul", "Damasco"], correct: 1, category: "hardcore", difficulty: 3, explanation: "Teerã." },
+    { question: "Quem escreveu 'O Grande Gatsby'?", options: ["Hemingway", "Fitzgerald", "Steinbeck", "Faulkner"], correct: 1, category: "hardcore", difficulty: 3, explanation: "F. Scott Fitzgerald." },
+    { question: "Qual a capital da Turquia?", options: ["Istambul", "Ancara", "Antália", "Izmir"], correct: 1, category: "hardcore", difficulty: 2, explanation: "Ancara." },
+    { question: "O que é 'Ikigai'?", options: ["Comida", "Razão de viver (Japonês)", "Luta", "Arte"], correct: 1, category: "hardcore", difficulty: 3, explanation: "Propósito de vida." },
+    { question: "Qual a capital da Polônia?", options: ["Cracóvia", "Varsóvia", "Gdansk", "Poznan"], correct: 1, category: "hardcore", difficulty: 3, explanation: "Varsóvia." },
+    { question: "Quem foi Mata Hari?", options: ["Rainha", "Espiã e dançarina", "Cientista", "Escritora"], correct: 1, category: "hardcore", difficulty: 3, explanation: "Fuzilada na 1ª Guerra." },
+    { question: "Qual a capital da Hungria?", options: ["Viena", "Budapeste", "Praga", "Bucareste"], correct: 1, category: "hardcore", difficulty: 3, explanation: "Budapeste." },
+    { question: "O que é 'Haiku'?", options: ["Luta", "Poema japonês curto", "Roupa", "Comida"], correct: 1, category: "hardcore", difficulty: 2, explanation: "Poesia 5-7-5." },
+    { question: "Qual a capital do Vietnã?", options: ["Ho Chi Minh", "Hanói", "Da Nang", "Hue"], correct: 1, category: "hardcore", difficulty: 3, explanation: "Hanói." },
+    { question: "Quem foi 'Tiradentes'?", options: ["Imperador", "Mártir da Inconfidência Mineira", "Pintor", "Poeta"], correct: 1, category: "minas", difficulty: 2, explanation: "Joaquim José da Silva Xavier." },
+    { question: "Qual a capital da Romênia?", options: ["Sófia", "Bucareste", "Belgrado", "Budapeste"], correct: 1, category: "hardcore", difficulty: 3, explanation: "Bucareste." },
+    { question: "O que é 'Taxidermia'?", options: ["Direção de táxi", "Empalhar animais", "Coleção de selos", "Cirurgia"], correct: 1, category: "hardcore", difficulty: 3, explanation: "Preservação de animais." },
+    { question: "Qual a capital da Indonésia?", options: ["Bali", "Jacarta", "Manila", "Bangkok"], correct: 1, category: "hardcore", difficulty: 3, explanation: "Jacarta." },
+    { question: "Quem descobriu o Raio-X?", options: ["Curie", "Roentgen", "Edison", "Tesla"], correct: 1, category: "hardcore", difficulty: 3, explanation: "Wilhelm Roentgen." },
+    { question: "Qual a capital do Paquistão?", options: ["Karachi", "Islamabad", "Lahore", "Cabul"], correct: 1, category: "hardcore", difficulty: 3, explanation: "Islamabad." },
+    { question: "O que é 'Bossa Nova'?", options: ["Dança", "Movimento musical brasileiro", "Prato", "Roupa"], correct: 1, category: "musica", difficulty: 2, explanation: "João Gilberto, Tom Jobim." },
+    { question: "Qual a capital da Sérvia?", options: ["Zagreb", "Belgrado", "Sarajevo", "Skopje"], correct: 1, category: "hardcore", difficulty: 3, explanation: "Belgrado." },
+    { question: "Quem escreveu 'Fausto'?", options: ["Goethe", "Schiller", "Kafka", "Mann"], correct: 0, category: "hardcore", difficulty: 4, explanation: "Goethe." },
+    { question: "Qual a capital da Bulgária?", options: ["Bucareste", "Sófia", "Belgrado", "Zagreb"], correct: 1, category: "hardcore", difficulty: 3, explanation: "Sófia." },
+    { question: "O que é 'Feng Shui'?", options: ["Comida", "Harmonização de ambientes", "Luta", "Medicina"], correct: 1, category: "hardcore", difficulty: 2, explanation: "Prática chinesa." },
+    { question: "Qual a capital da Nigéria?", options: ["Lagos", "Abuja", "Kano", "Ibadan"], correct: 1, category: "hardcore", difficulty: 3, explanation: "Abuja." },
+    { question: "Quem pintou 'Guernica'?", options: ["Dali", "Picasso", "Miro", "Goya"], correct: 1, category: "arte", difficulty: 2, explanation: "Picasso." },
+    { question: "Qual a capital da Ucrânia?", options: ["Minsk", "Kiev", "Moscou", "Varsóvia"], correct: 1, category: "hardcore", difficulty: 2, explanation: "Kiev." },
+    { question: "O que é 'Braille'?", options: ["Língua de sinais", "Escrita tátil", "Dialeto", "Fonte"], correct: 1, category: "hardcore", difficulty: 2, explanation: "Para cegos." },
+    { question: "Qual a capital da Eslováquia?", options: ["Praga", "Bratislava", "Ljubljana", "Viena"], correct: 1, category: "hardcore", difficulty: 3, explanation: "Bratislava." },
+    { question: "Quem foi Tchaikovsky?", options: ["Pintor", "Compositor russo", "Escritor", "Rei"], correct: 1, category: "musica", difficulty: 2, explanation: "Lago dos Cisnes." },
+    { question: "Qual a capital do Marrocos?", options: ["Casablanca", "Rabat", "Marrakech", "Fez"], correct: 1, category: "hardcore", difficulty: 3, explanation: "Rabat." },
+    { question: "O que é 'Origami'?", options: ["Comida", "Arte de dobrar papel", "Luta", "Flor"], correct: 1, category: "hardcore", difficulty: 2, explanation: "Japonês." },
+    { question: "Qual a capital do Equador?", options: ["Guayaquil", "Quito", "Cuenca", "Lima"], correct: 1, category: "hardcore", difficulty: 3, explanation: "Quito." },
+    { question: "Quem foi Bach?", options: ["Pintor", "Compositor barroco", "Escritor", "Cientista"], correct: 1, category: "musica", difficulty: 2, explanation: "Johann Sebastian Bach." },
+    { question: "Qual a capital da Malásia?", options: ["Singapura", "Kuala Lumpur", "Jacarta", "Bangkok"], correct: 1, category: "hardcore", difficulty: 3, explanation: "Kuala Lumpur." },
+    { question: "O que é 'Zen'?", options: ["Chá", "Escola Budista (Meditação)", "Luta", "Massagem"], correct: 1, category: "hardcore", difficulty: 2, explanation: "Meditação." },
+    { question: "Qual a capital da Croácia?", options: ["Split", "Zagreb", "Dubrovnik", "Zadar"], correct: 1, category: "hardcore", difficulty: 3, explanation: "Zagreb." },
+    { question: "Quem escreveu 'A Divina Comédia'?", options: ["Maquiavel", "Dante Alighieri", "Petrarca", "Boccaccio"], correct: 1, category: "hardcore", difficulty: 3, explanation: "Dante." },
+    { question: "Qual a capital do Quênia?", options: ["Lagos", "Nairóbi", "Cairo", "Dakar"], correct: 1, category: "hardcore", difficulty: 3, explanation: "Nairóbi." },
+    { question: "O que é 'Bonsai'?", options: ["Prato", "Árvore em miniatura", "Peixe", "Pedra"], correct: 1, category: "hardcore", difficulty: 2, explanation: "Arte japonesa." },
+    { question: "Qual a capital da República Tcheca?", options: ["Bratislava", "Praga", "Viena", "Budapeste"], correct: 1, category: "hardcore", difficulty: 2, explanation: "Praga." },
+    { question: "Quem foi Chopin?", options: ["Pintor", "Pianista polonês", "Escritor", "Cientista"], correct: 1, category: "musica", difficulty: 2, explanation: "Frédéric Chopin." }
+
 
 
 
@@ -2163,38 +2295,50 @@ function startGame(mode) {
     // 1. Filtrar o banco de perguntas baseado no modo
     if (mode === 'tech') {
         pool = allQuestions.filter(q => q.category === 'ti');
+    } else if (mode === 'hardcore') {
+        // Modo Hardcore: Filtra perguntas de dificuldade 3 ou a categoria hardcore
+        // Como o usuário pediu apenas 1 pergunta por enquanto, este filtro garantirá que ela apareça
+        pool = allQuestions.filter(q => q.category === 'hardcore' || q.difficulty >= 3);
     } else {
         // Modo Família (Tudim misturado): REMOVE TI COMPLETAMENTE
-        pool = allQuestions.filter(q => q.category !== 'ti');
+        pool = allQuestions.filter(q => q.category !== 'ti' && q.category !== 'hardcore');
     }
-
-    // 2. Criar a progressão de dificuldade (5 Fáceis + 45 Médias/Difíceis Misturadas)
-    
-    // Filtra fáceis
-    const easyPool = pool.filter(q => q.difficulty === 1).sort(() => 0.5 - Math.random());
-    
-    // Filtra médias e difíceis e mistura tudo num saco só
-    const hardPool = pool.filter(q => q.difficulty > 1).sort(() => 0.5 - Math.random());
 
     let selectedQuestions = [];
-    
-    // Pega 5 fáceis
-    const qEasy = easyPool.slice(0, 5);
-    
-    // Pega 45 do resto (médio/difícil)
-    const qRest = hardPool.slice(0, 45);
 
-    selectedQuestions = [...qEasy, ...qRest];
+    if (mode === 'hardcore') {
+        // No modo hardcore, pegamos a pergunta específica 'hardcore' e completamos com as difíceis
+        const hardcoreQ = pool.filter(q => q.category === 'hardcore');
+        const otherHardQ = pool.filter(q => q.category !== 'hardcore').sort(() => 0.5 - Math.random());
+        
+        // Garante que a pergunta hardcore esteja lá, misturada com outras difíceis
+        selectedQuestions = [...hardcoreQ, ...otherHardQ];
+        // Para testes iniciais, se tiver poucas, usa o que tem. Se tiver muitas, corta em 50.
+    } else {
+        // Lógica Padrão (Família/Tech)
+        // Filtra fáceis
+        const easyPool = pool.filter(q => q.difficulty === 1).sort(() => 0.5 - Math.random());
+        
+        // Filtra médias e difíceis e mistura tudo num saco só
+        const hardPool = pool.filter(q => q.difficulty > 1).sort(() => 0.5 - Math.random());
+        
+        // Pega 5 fáceis
+        const qEasy = easyPool.slice(0, 5);
+        
+        // Pega 45 do resto (médio/difícil)
+        const qRest = hardPool.slice(0, 45);
 
-    // Se por acaso não tiver 50 (ex: filtro muito restrito), completa com o que tiver sobrado das fáceis ou repete (fallback seguro)
-    if (selectedQuestions.length < 50) {
-        const needed = 50 - selectedQuestions.length;
-        // Pega qualquer pergunta que sobrou, mesmo que seja fácil, pra completar
-        const remaining = pool.filter(q => !selectedQuestions.includes(q)).sort(() => 0.5 - Math.random());
-        selectedQuestions = selectedQuestions.concat(remaining.slice(0, needed));
+        selectedQuestions = [...qEasy, ...qRest];
+
+        // Fallback se não tiver 50 perguntas
+        if (selectedQuestions.length < 50) {
+            const needed = 50 - selectedQuestions.length;
+            const remaining = pool.filter(q => !selectedQuestions.includes(q)).sort(() => 0.5 - Math.random());
+            selectedQuestions = selectedQuestions.concat(remaining.slice(0, needed));
+        }
     }
     
-    // Garante corte em 50
+    // Garante corte em 50 (ou menos se não tiver 50 no hardcore ainda)
     currentQuestions = selectedQuestions.slice(0, 50);
 
     currentQuestionIndex = 0;
@@ -2204,7 +2348,6 @@ function startGame(mode) {
     renderPrizeList();
     
     switchScreen(screenGame);
-    // Substituído o Toast pelo Modal de Aviso
     showStartWarning(); 
     loadQuestion();
 }
