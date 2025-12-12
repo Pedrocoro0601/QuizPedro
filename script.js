@@ -236,7 +236,7 @@ const allQuestions = [
     { question: "Qual o menor osso do corpo?", options: ["Estribo", "Martelo", "Bigorna", "Fêmur"], correct: 0, category: "ciencias", difficulty: 3, explanation: "O estribo, localizado no ouvido médio." },
     { question: "Qual a capital da Colômbia?", options: ["Medellín", "Bogotá", "Cali", "Cartagena"], correct: 1, category: "geografia", difficulty: 3, explanation: "Bogotá." },
 
-    // --- LOTE 5: PERGUNTAS MISTURADAS (Mantidos) ---
+    // --- LOTE 6: PERGUNTAS MISTURADAS (Mantidos) ---
     { question: "Qual a cor da banana madura?", options: ["Verde", "Azul", "Amarela", "Roxa"], correct: 2, category: "geral", difficulty: 1, explanation: "Bananas maduras ficam amarelas." },
     { question: "Quantos meses tem um ano?", options: ["10", "12", "15", "20"], correct: 1, category: "geral", difficulty: 1, explanation: "Um ano possui 12 meses." },
     { question: "O que usamos para ouvir?", options: ["Nariz", "Boca", "Ouvidos", "Mãos"], correct: 2, category: "ciencias", difficulty: 1, explanation: "Os ouvidos são os órgãos da audição." },
@@ -338,9 +338,7 @@ const allQuestions = [
     { question: "Quem escreveu 'Fausto'?", options: ["Goethe", "Schiller", "Kafka", "Mann"], correct: 0, category: "literatura", difficulty: 3, explanation: "Johann Wolfgang von Goethe." },
     { question: "Qual a capital da Romênia?", options: ["Bucareste", "Budapeste", "Sófia", "Belgrado"], correct: 0, category: "geografia", difficulty: 3, explanation: "Bucareste." },
 
-    // --- LOTE 6: NOVAS 50 TI (Médio/Difícil) + 50 VARIADADES (Médio/Difícil) ---
-    
-    // --- 50 Novas TI (MÉDIO / DIFÍCIL) ---
+    // --- LOTE 6: PERGUNTAS MISTURADAS (Mantidos) ---
     { question: "O que é 'Dead Code Elimination'?", options: ["Remover código não usado", "Apagar comentários", "Otimizar imagens", "Deletar logs"], correct: 0, category: "ti", difficulty: 2, explanation: "Otimização de compilador para remover código que não afeta o programa." },
     { question: "O que é 'Vertical Scaling'?", options: ["Adicionar mais máquinas", "Aumentar recursos da mesma máquina (CPU/RAM)", "Mudar de prédio", "Criar microserviços"], correct: 1, category: "ti", difficulty: 2, explanation: "Upgrade de hardware de um servidor existente." },
     { question: "Qual a função do 'Kubernetes'?", options: ["Gerenciar containers", "Compilar Java", "Editar vídeo", "Criar sites"], correct: 0, category: "ti", difficulty: 2, explanation: "Orquestração de containers (como Docker) em clusters." },
@@ -391,8 +389,6 @@ const allQuestions = [
     { question: "O que é 'Idempotência'?", options: ["Operação repetida tem mesmo efeito", "Poder total", "Identidade única", "Erro de repetição"], correct: 0, category: "ti", difficulty: 3, explanation: "Propriedade fundamental em APIs REST (ex: PUT, DELETE)." },
     { question: "O que é 'Man-in-the-Middle'?", options: ["Ataque de interceptação", "Gerente", "Servidor central", "Usuário"], correct: 0, category: "ti", difficulty: 3, explanation: "Ataque onde o hacker intercepta a comunicação entre duas partes." },
     { question: "O que é 'Zero-day'?", options: ["Vulnerabilidade recém-descoberta", "Dia de folga", "Começar do zero", "Data inválida"], correct: 0, category: "ti", difficulty: 3, explanation: "Falha de segurança conhecida antes de haver correção." },
-
-    // --- 50 Novas VARIEDADES (MÉDIO / DIFÍCIL) ---
     { question: "Qual a capital do Cazaquistão?", options: ["Astana", "Almaty", "Tashkent", "Bishkek"], correct: 0, category: "geografia", difficulty: 3, explanation: "Astana (que chegou a se chamar Nur-Sultan)." },
     { question: "Quem escreveu 'A Arte da Guerra'?", options: ["Sun Tzu", "Confúcio", "Mao Tsé-Tung", "Lao Tsé"], correct: 0, category: "literatura", difficulty: 2, explanation: "Estrategista militar chinês Sun Tzu." },
     { question: "Qual o mineral mais duro da natureza?", options: ["Diamante", "Grafite", "Quartzo", "Topázio"], correct: 0, category: "ciencias", difficulty: 2, explanation: "O diamante atinge 10 na escala de Mohs." },
@@ -442,7 +438,111 @@ const allQuestions = [
     { question: "Qual a capital da Hungria?", options: ["Budapeste", "Bucareste", "Praga", "Viena"], correct: 0, category: "geografia", difficulty: 2, explanation: "Budapeste." },
     { question: "O que é um 'Buraco Negro'?", options: ["Região de gravidade extrema", "Túnel no espaço", "Estrela apagada", "Vazio total"], correct: 0, category: "ciencias", difficulty: 2, explanation: "Nada, nem a luz, escapa dele." },
     { question: "Quem pintou 'A Escola de Atenas'?", options: ["Rafael", "Da Vinci", "Michelangelo", "Donatello"], correct: 0, category: "arte", difficulty: 3, explanation: "Rafael Sanzio." },
-    { question: "Qual a moeda do Reino Unido?", options: ["Libra Esterlina", "Euro", "Dólar", "Franco"], correct: 0, category: "geografia", difficulty: 2, explanation: "Pound Sterling." }
+    { question: "Qual a moeda do Reino Unido?", options: ["Libra Esterlina", "Euro", "Dólar", "Franco"], correct: 0, category: "geografia", difficulty: 2, explanation: "Pound Sterling." },
+
+    // --- LOTE 7: 50 NOVAS TI (Mais Desafiadoras) ---
+    { question: "O que é 'Currying' em Programação Funcional?", options: ["Transformar função de múltiplos argumentos em sequência de unários", "Tempero indiano no código", "Loop infinito", "Erro de recursão"], correct: 0, category: "ti", difficulty: 3, explanation: "Técnica de decompor uma função que recebe múltiplos argumentos em uma cadeia de funções." },
+    { question: "Qual a diferença entre 'Process' e 'Thread'?", options: ["Threads compartilham memória, Processos são isolados", "Processos são mais leves", "Não há diferença", "Threads são apenas para UI"], correct: 0, category: "ti", difficulty: 2, explanation: "Processos têm seu próprio espaço de memória; threads dentro de um processo compartilham memória." },
+    { question: "O que é 'Sticky Session'?", options: ["Usuário preso ao mesmo servidor na sessão", "Sessão travada", "Cookie doce", "Erro de login"], correct: 0, category: "ti", difficulty: 2, explanation: "Mecanismo de Load Balancer para direcionar requisições do mesmo usuário para o mesmo servidor." },
+    { question: "O que é 'Blue-Green Deployment'?", options: ["Dois ambientes idênticos (ativo/inativo) para deploy seguro", "Mistura de cores", "Deploy apenas em dias claros", "Erro de tela azul"], correct: 0, category: "ti", difficulty: 3, explanation: "Estratégia de lançamento que reduz downtime trocando o tráfego entre dois ambientes." },
+    { question: "O que é 'Chaos Engineering'?", options: ["Testar resiliência injetando falhas propositais", "Programar sem regras", "Gerenciar caos no escritório", "Engenharia civil"], correct: 0, category: "ti", difficulty: 3, explanation: "Prática introduzida pela Netflix (Chaos Monkey) para garantir que sistemas suportem falhas." },
+    { question: "O que é 'CQRS'?", options: ["Segregação de Responsabilidade de Comando e Consulta", "Código Que Roda Sozinho", "Query Simples", "Sistema de Fila"], correct: 0, category: "ti", difficulty: 3, explanation: "Padrão que separa modelos de leitura e escrita." },
+    { question: "O que é 'Tree Traversal'?", options: ["Visitar todos os nós de uma árvore", "Cortar árvores", "Jardinagem digital", "Salvar arquivos"], correct: 0, category: "ti", difficulty: 2, explanation: "Processo de visitar cada nó em uma estrutura de dados de árvore (ex: DFS, BFS)." },
+    { question: "O que é 'Mutex'?", options: ["Objeto de exclusão mútua", "Texugo mutante", "Variável global", "Protocolo de rede"], correct: 0, category: "ti", difficulty: 3, explanation: "Mecanismo de sincronização para evitar que threads acessem recursos simultaneamente." },
+    { question: "O que significa 'SLA'?", options: ["Service Level Agreement", "System Local Access", "Server Low Alert", "Simple Log Analysis"], correct: 0, category: "ti", difficulty: 2, explanation: "Acordo de Nível de Serviço, definindo expectativas entre provedor e cliente." },
+    { question: "O que é 'Rubber Duck Debugging'?", options: ["Explicar código a um pato de borracha para achar erros", "Pato que apaga bugs", "Brinquedo de dev", "Linguagem Pato"], correct: 0, category: "ti", difficulty: 2, explanation: "Método psicológico de depuração: ao verbalizar o problema, a solução aparece." },
+    { question: "O que é 'Side Effect' em função?", options: ["Mudança de estado fora do escopo local", "Efeito visual", "Erro lateral", "Menu lateral"], correct: 0, category: "ti", difficulty: 2, explanation: "Quando uma função altera algo além de retornar um valor (ex: mudar variável global)." },
+    { question: "Qual a função do 'Babel'?", options: ["Transpilador JS", "Torre bíblica", "Tradutor de inglês", "Banco de dados"], correct: 0, category: "ti", difficulty: 2, explanation: "Converte JavaScript moderno (ES6+) em versões compatíveis com navegadores antigos." },
+    { question: "O que é 'Hot Reloading'?", options: ["Atualizar código sem perder estado da aplicação", "Recarregar arma", "Esquentar PC", "Reiniciar servidor"], correct: 0, category: "ti", difficulty: 2, explanation: "Recurso comum em frameworks modernos (React, Flutter) para desenvolvimento rápido." },
+    { question: "O que é 'Technical Debt'?", options: ["Custo implícito de escolher solução rápida vs correta", "Dívida no banco", "Pagar licença", "Erro técnico"], correct: 0, category: "ti", difficulty: 2, explanation: "Dívida Técnica: trabalho extra futuro gerado por soluções fáceis agora." },
+    { question: "O que é 'Kanban'?", options: ["Método visual de gestão de fluxo", "Luta japonesa", "Tipo de servidor", "Linguagem de script"], correct: 0, category: "ti", difficulty: 2, explanation: "Sistema de cartões para gerenciar tarefas e fluxo de trabalho." },
+    { question: "O que é 'Event Sourcing'?", options: ["Armazenar estado como sequência de eventos", "Fonte de eventos", "Festa de devs", "Plugin de calendário"], correct: 0, category: "ti", difficulty: 3, explanation: "Padrão onde todas as mudanças no estado da aplicação são salvas como eventos." },
+    { question: "O que é 'Polyfill'?", options: ["Código que implementa recurso faltante no navegador", "Massa corrida", "Preenchimento de polígonos", "Arquivo zip"], correct: 0, category: "ti", difficulty: 3, explanation: "Permite usar APIs modernas em navegadores que não as suportam nativamente." },
+    { question: "O que é 'Three-way Handshake'?", options: ["Processo de conexão TCP (SYN, SYN-ACK, ACK)", "Cumprimento secreto", "Negociação de preço", "Login triplo"], correct: 0, category: "ti", difficulty: 3, explanation: "Método usado pelo TCP para estabelecer uma conexão confiável." },
+    { question: "O que é 'Dependency Hell'?", options: ["Conflito de versões de bibliotecas", "Lugar quente", "Erro de banco", "Hackers"], correct: 0, category: "ti", difficulty: 2, explanation: "Problemas complexos causados por dependências de software conflitantes." },
+    { question: "O que é 'Monorepo'?", options: ["Repositório único para múltiplos projetos", "Repositório mono usuário", "Projeto pequeno", "Banco único"], correct: 0, category: "ti", difficulty: 2, explanation: "Estratégia de armazenar código de muitos projetos no mesmo repositório." },
+    { question: "O que é 'Linting'?", options: ["Análise estática de código para erros/estilo", "Limpar tela", "Linkar arquivos", "Compilar"], correct: 0, category: "ti", difficulty: 2, explanation: "Ferramentas (Linters) que buscam problemas no código antes da execução." },
+    { question: "O que é 'Dark Mode' em UX?", options: ["Interface com cores escuras", "Modo secreto", "Erro de tela", "Vírus"], correct: 0, category: "ti", difficulty: 1, explanation: "Esquema de cores preferido por muitos devs para reduzir cansaço visual." },
+    { question: "O que é 'Native' app?", options: ["App desenvolvido para plataforma específica (iOS/Android)", "App web", "App híbrido", "App antigo"], correct: 0, category: "ti", difficulty: 2, explanation: "Software construído especificamente para o sistema operacional do dispositivo." },
+    { question: "O que é 'SSO'?", options: ["Single Sign-On", "Super Safe Online", "Server System Out", "Simple Site Option"], correct: 0, category: "ti", difficulty: 2, explanation: "Autenticação única: login em vários sistemas com uma credencial." },
+    { question: "O que é 'Daemon'?", options: ["Processo em background", "Demônio de jogo", "Erro fatal", "Vírus"], correct: 0, category: "ti", difficulty: 3, explanation: "Programa que roda em segundo plano, sem interação direta do usuário." },
+    { question: "O que é 'Integer Overflow'?", options: ["Valor excede capacidade do tipo inteiro", "Copo cheio", "Erro de texto", "Memória vazia"], correct: 0, category: "ti", difficulty: 2, explanation: "Quando um cálculo aritmético ultrapassa o valor máximo armazenável." },
+    { question: "O que é 'Boilerplate Code'?", options: ["Código repetitivo padrão", "Código quente", "Placa de metal", "Código errado"], correct: 0, category: "ti", difficulty: 2, explanation: "Seções de código que devem ser incluídas em muitos lugares com pouca alteração." },
+    { question: "O que é 'TTL'?", options: ["Time To Live", "Talk To Later", "Total Text Length", "Table Type List"], correct: 0, category: "ti", difficulty: 2, explanation: "Mecanismo que limita a vida útil de dados ou pacotes na rede." },
+    { question: "O que é 'Sanitization'?", options: ["Limpar inputs para evitar injeção", "Limpar tela", "Organizar arquivos", "Formatar PC"], correct: 0, category: "ti", difficulty: 2, explanation: "Prática de segurança para garantir que dados de entrada não contenham comandos maliciosos." },
+    { question: "O que é 'Semantic HTML'?", options: ["Uso de tags com significado (nav, article)", "HTML antigo", "HTML colorido", "Apenas div e span"], correct: 0, category: "ti", difficulty: 2, explanation: "Usar tags que descrevem o conteúdo para acessibilidade e SEO." },
+    { question: "O que é 'VPS'?", options: ["Virtual Private Server", "Very Powerful System", "Video Play Speed", "Visual Private Source"], correct: 0, category: "ti", difficulty: 2, explanation: "Máquina virtual vendida como serviço por empresas de hospedagem." },
+    { question: "O que é 'Throughput'?", options: ["Taxa de transferência de dados", "Através de", "Latência", "Perda de pacote"], correct: 0, category: "ti", difficulty: 2, explanation: "Quantidade de dados processados em um período de tempo." },
+    { question: "O que é 'Keylogger'?", options: ["Malware que registra teclas", "Login por chave", "Gerenciador de senhas", "Teclado virtual"], correct: 0, category: "ti", difficulty: 2, explanation: "Software espião que grava tudo que é digitado." },
+    { question: "O que é 'Spoofing'?", options: ["Falsificação de identidade em rede", "Brincadeira", "Spam", "Erro de digitação"], correct: 0, category: "ti", difficulty: 3, explanation: "Ataque onde uma pessoa/programa se mascara como outro falsificando dados." },
+    { question: "O que é 'Firmware'?", options: ["Software embutido no hardware", "Software firme", "Antivírus", "Capa de celular"], correct: 0, category: "ti", difficulty: 2, explanation: "Software de baixo nível que controla o hardware." },
+    { question: "O que é 'BIOS'?", options: ["Basic Input/Output System", "Binary Input OS", "Basic Internet Open Source", "Big Integrated Operating System"], correct: 0, category: "ti", difficulty: 2, explanation: "Firmware usado para inicializar o hardware durante o boot." },
+    { question: "O que é 'Mainframe'?", options: ["Computador de grande porte para processamento massivo", "Tela principal", "Moldura", "PC Gamer"], correct: 0, category: "ti", difficulty: 2, explanation: "Computadores poderosos usados por grandes organizações." },
+    { question: "O que é 'Clock Speed'?", options: ["Velocidade do processador (Hz)", "Hora do sistema", "Tempo de boot", "Cronômetro"], correct: 0, category: "ti", difficulty: 1, explanation: "Frequência na qual o processador executa instruções." },
+    { question: "O que é 'Overclocking'?", options: ["Aumentar velocidade do componente acima do padrão", "Relógio extra", "Trabalhar muito", "Erro de tempo"], correct: 0, category: "ti", difficulty: 2, explanation: "Prática de forçar hardware a rodar mais rápido que a especificação." },
+    { question: "O que é 'Botnet'?", options: ["Rede de computadores infectados controlados remotamente", "Rede de robôs amigos", "Internet rápida", "Chatbot"], correct: 0, category: "ti", difficulty: 2, explanation: "Rede usada para ataques DDoS e spam." },
+    { question: "O que é 'Ransomware'?", options: ["Malware que sequestra dados por resgate", "Software de corrida", "Antivírus pago", "Jogo de resgate"], correct: 0, category: "ti", difficulty: 2, explanation: "Tipo de malware que criptografa arquivos e exige pagamento." },
+    { question: "O que é 'GUI'?", options: ["Graphical User Interface", "Global Unit Index", "General User Info", "Game UI"], correct: 0, category: "ti", difficulty: 1, explanation: "Interface gráfica que permite interação visual." },
+    { question: "O que é 'CLI'?", options: ["Command Line Interface", "Code Line Input", "Common Language Interface", "Central Link Info"], correct: 0, category: "ti", difficulty: 2, explanation: "Interface de Linha de Comando (terminal)." },
+    { question: "O que é 'Sudo'?", options: ["SuperUser DO", "Suar muito", "Comando de saída", "Apelido de admin"], correct: 0, category: "ti", difficulty: 2, explanation: "Comando Linux para executar tarefas com privilégios elevados." },
+    { question: "O que é 'Chmod'?", options: ["Change Mode (permissões)", "Change Model", "Chat Mode", "Check Modem"], correct: 0, category: "ti", difficulty: 2, explanation: "Comando para alterar permissões de arquivos no Unix." },
+    { question: "O que é '404'?", options: ["Not Found", "Server Error", "Success", "Forbidden"], correct: 0, category: "ti", difficulty: 1, explanation: "Código de status HTTP para recurso não encontrado." },
+    { question: "O que é '500'?", options: ["Internal Server Error", "Not Found", "OK", "Redirect"], correct: 0, category: "ti", difficulty: 2, explanation: "Erro genérico do servidor." },
+    { question: "O que é 'Stack Trace'?", options: ["Rastro da pilha de execução (para debug)", "Pilha de livros", "Rastreio de entrega", "Histórico do navegador"], correct: 0, category: "ti", difficulty: 2, explanation: "Relatório que fornece informações sobre as chamadas de função ativas em um ponto." },
+    { question: "O que é 'Variable Scope'?", options: ["Contexto onde variável é acessível", "Tamanho da variável", "Tipo da variável", "Valor da variável"], correct: 0, category: "ti", difficulty: 2, explanation: "Define a visibilidade e tempo de vida de variáveis." },
+    { question: "O que é 'Callback Hell'?", options: ["Muitos callbacks aninhados dificultando leitura", "Ligação ruim", "Erro de retorno", "Festa do inferno"], correct: 0, category: "ti", difficulty: 2, explanation: "Fenômeno em JS assíncrono com muitos aninhamentos (Pyramid of Doom)." },
+
+    // --- LOTE 8: 50 NOVAS VARIADADES (Médio / Difícil) ---
+    { question: "Qual a capital do Butão?", options: ["Timbu", "Catmandu", "Daca", "Lhasa"], correct: 0, category: "geografia", difficulty: 3, explanation: "Timbu (Thimphu)." },
+    { question: "Quem escreveu 'O Príncipe'?", options: ["Maquiavel", "Dante", "Platão", "Hobbes"], correct: 0, category: "literatura", difficulty: 2, explanation: "Nicolau Maquiavel." },
+    { question: "Qual o maior osso do corpo humano?", options: ["Fêmur", "Tíbia", "Úmero", "Bacia"], correct: 0, category: "ciencias", difficulty: 1, explanation: "O Fêmur, na coxa." },
+    { question: "Qual a cidade mais antiga continuamente habitada?", options: ["Damasco", "Roma", "Atenas", "Jericó"], correct: 0, category: "geografia", difficulty: 3, explanation: "Damasco (Síria) é frequentemente citada." },
+    { question: "Quem descobriu a Penicilina?", options: ["Alexander Fleming", "Louis Pasteur", "Marie Curie", "Freud"], correct: 0, category: "ciencias", difficulty: 2, explanation: "Por acidente, em 1928." },
+    { question: "Qual a capital da Estônia?", options: ["Tallinn", "Riga", "Vilnius", "Helsinque"], correct: 0, category: "geografia", difficulty: 3, explanation: "Tallinn." },
+    { question: "O que é a 'Pedra Filosofal' na lenda?", options: ["Transforma metais em ouro", "Pedra que fala", "Arma mágica", "Livro antigo"], correct: 0, category: "cultura", difficulty: 2, explanation: "Objeto mítico da alquimia." },
+    { question: "Quem pintou 'A Ronda Noturna'?", options: ["Rembrandt", "Vermeer", "Van Gogh", "Rubens"], correct: 0, category: "arte", difficulty: 3, explanation: "Obra prima de Rembrandt." },
+    { question: "Qual o país com maior IDH do mundo (geralmente)?", options: ["Noruega", "EUA", "Japão", "Brasil"], correct: 0, category: "geografia", difficulty: 2, explanation: "Noruega e Suíça costumam alternar no topo." },
+    { question: "O que é 'Efêmero'?", options: ["Passageiro, dura pouco", "Eterno", "Feminino", "Doença"], correct: 0, category: "geral", difficulty: 2, explanation: "Algo que tem curta duração." },
+    { question: "Quem foi o deus grego do vinho?", options: ["Dionísio", "Apolo", "Zeus", "Hades"], correct: 0, category: "mitologia", difficulty: 2, explanation: "Dionísio (Baco para os romanos)." },
+    { question: "Qual a capital do Líbano?", options: ["Beirute", "Amã", "Damasco", "Tel Aviv"], correct: 0, category: "geografia", difficulty: 2, explanation: "Beirute." },
+    { question: "Quem escreveu 'A Metamorfose'?", options: ["Franz Kafka", "Orwell", "Sartre", "Camus"], correct: 0, category: "literatura", difficulty: 2, explanation: "Kafka (Gregor Samsa vira um inseto)." },
+    { question: "Qual o símbolo químico da Prata?", options: ["Ag", "Au", "Pt", "Si"], correct: 0, category: "ciencias", difficulty: 2, explanation: "Ag (Argentum)." },
+    { question: "O que é 'Filantropia'?", options: ["Amor à humanidade (caridade)", "Estudo de selos", "Medo de plantas", "Amor a cavalos"], correct: 0, category: "geral", difficulty: 2, explanation: "Ajudar o próximo." },
+    { question: "Quem foi a 'Dama de Ferro'?", options: ["Margaret Thatcher", "Rainha Vitória", "Angela Merkel", "Joana d'Arc"], correct: 0, category: "historia", difficulty: 2, explanation: "Primeira-ministra britânica." },
+    { question: "Qual a capital da Croácia?", options: ["Zagreb", "Dubrovnik", "Split", "Belgrado"], correct: 0, category: "geografia", difficulty: 3, explanation: "Zagreb." },
+    { question: "O que é 'Ikigai'?", options: ["Razão de viver (Conceito japonês)", "Comida crua", "Luta de espada", "Bonsai"], correct: 0, category: "cultura", difficulty: 3, explanation: "Conceito de propósito de vida." },
+    { question: "Quem compôs o 'Bolero'?", options: ["Ravel", "Debussy", "Chopin", "Bach"], correct: 0, category: "musica", difficulty: 3, explanation: "Maurice Ravel." },
+    { question: "Qual a camada de ozônio protege contra?", options: ["Raios Ultravioleta (UV)", "Raios Gama", "Chuva ácida", "Meteoros"], correct: 0, category: "ciencias", difficulty: 1, explanation: "Protege a Terra da radiação UV nociva." },
+    { question: "Quem escreveu 'Orgulho e Preconceito'?", options: ["Jane Austen", "Emily Bronte", "Woolf", "Agatha Christie"], correct: 0, category: "literatura", difficulty: 2, explanation: "Jane Austen." },
+    { question: "Qual a capital da Venezuela?", options: ["Caracas", "Quito", "Bogotá", "La Paz"], correct: 0, category: "geografia", difficulty: 2, explanation: "Caracas." },
+    { question: "O que é um 'Habeas Corpus'?", options: ["Garantia de liberdade", "Corpo de delito", "Prova de crime", "Julgamento final"], correct: 0, category: "geral", difficulty: 2, explanation: "Recurso jurídico para garantir liberdade de locomoção." },
+    { question: "Quem foi Spartacus?", options: ["Gladiador que liderou revolta", "Imperador", "Filósofo", "Deus"], correct: 0, category: "historia", difficulty: 2, explanation: "Líder da revolta dos escravos contra Roma." },
+    { question: "Qual a capital da Áustria?", options: ["Viena", "Berna", "Berlim", "Budapeste"], correct: 0, category: "geografia", difficulty: 2, explanation: "Viena." },
+    { question: "O que é 'Fotofobia'?", options: ["Sensibilidade à luz", "Medo de fotos", "Gostar de escuro", "Doença de planta"], correct: 0, category: "ciencias", difficulty: 2, explanation: "Aversão ou sensibilidade à luz." },
+    { question: "Quem pintou 'Moça com Brinco de Pérola'?", options: ["Vermeer", "Rembrandt", "Van Gogh", "Da Vinci"], correct: 0, category: "arte", difficulty: 3, explanation: "Johannes Vermeer." },
+    { question: "Qual o maior animal marinho?", options: ["Baleia Azul", "Tubarão Branco", "Lula Colossal", "Orca"], correct: 0, category: "ciencias", difficulty: 1, explanation: "Baleia Azul." },
+    { question: "Quem foi Winston Churchill?", options: ["Primeiro-ministro britânico na 2ª Guerra", "Presidente dos EUA", "General Alemão", "Escritor francês"], correct: 0, category: "historia", difficulty: 2, explanation: "Líder do Reino Unido durante a guerra." },
+    { question: "Qual a capital da Sérvia?", options: ["Belgrado", "Sarajevo", "Zagreb", "Skopje"], correct: 0, category: "geografia", difficulty: 3, explanation: "Belgrado." },
+    { question: "O que é 'Taxidermia'?", options: ["Empalhar animais", "Estudo de táxis", "Coleção de selos", "Cirurgia"], correct: 0, category: "ciencias", difficulty: 3, explanation: "Técnica de preservação da forma da pele de animais." },
+    { question: "Quem dirigiu 'Pulp Fiction'?", options: ["Tarantino", "Scorsese", "Nolan", "Spielberg"], correct: 0, category: "filmes", difficulty: 2, explanation: "Quentin Tarantino." },
+    { question: "Qual a moeda da China?", options: ["Yuan (Renminbi)", "Iene", "Won", "Dólar"], correct: 0, category: "geografia", difficulty: 2, explanation: "Yuan." },
+    { question: "O que é 'Aurora Boreal'?", options: ["Luzes polares no hemisfério norte", "Estrela cadente", "Cometa", "Nascer do sol"], correct: 0, category: "geografia", difficulty: 2, explanation: "Fenômeno luminoso no norte (no sul é Austral)." },
+    { question: "Quem escreveu 'O Conde de Monte Cristo'?", options: ["Alexandre Dumas", "Victor Hugo", "Verne", "Zola"], correct: 0, category: "literatura", difficulty: 2, explanation: "Alexandre Dumas." },
+    { question: "Qual a capital do Uruguai?", options: ["Montevidéu", "Assunção", "Buenos Aires", "Santiago"], correct: 0, category: "geografia", difficulty: 2, explanation: "Montevidéu." },
+    { question: "O que é 'Teorema de Pitágoras'?", options: ["Relação em triângulos retângulos", "Física quântica", "Química", "Lei gravitacional"], correct: 0, category: "matematica", difficulty: 1, explanation: "a² + b² = c²." },
+    { question: "Quem inventou a lâmpada (comercial)?", options: ["Edison", "Tesla", "Bell", "Newton"], correct: 0, category: "ciencias", difficulty: 2, explanation: "Thomas Edison." },
+    { question: "Qual a capital da Indonésia (atual)?", options: ["Jacarta", "Bali", "Manila", "Kuala Lumpur"], correct: 0, category: "geografia", difficulty: 3, explanation: "Jacarta (mas planejam mudar)." },
+    { question: "O que é 'Zen'?", options: ["Escola de Budismo", "Tipo de chá", "Yoga", "Massagem"], correct: 0, category: "cultura", difficulty: 2, explanation: "Budismo focado em meditação." },
+    { question: "Quem compôs 'Nona Sinfonia' (Ode à Alegria)?", options: ["Beethoven", "Mozart", "Bach", "Wagner"], correct: 0, category: "musica", difficulty: 2, explanation: "Beethoven." },
+    { question: "Qual a camada de gás que envolve a Terra?", options: ["Atmosfera", "Hidrosfera", "Litosfera", "Biosfera"], correct: 0, category: "ciencias", difficulty: 1, explanation: "Atmosfera." },
+    { question: "Quem escreveu 'Drácula'?", options: ["Bram Stoker", "Shelley", "Poe", "King"], correct: 0, category: "literatura", difficulty: 2, explanation: "Bram Stoker." },
+    { question: "Qual a capital do Quênia?", options: ["Nairóbi", "Lagos", "Cairo", "Dakar"], correct: 0, category: "geografia", difficulty: 3, explanation: "Nairóbi." },
+    { question: "O que é 'Pragmático'?", options: ["Prático, objetivo", "Sonhador", "Preguiçoso", "Teórico"], correct: 0, category: "geral", difficulty: 3, explanation: "Focado na prática e resultados." },
+    { question: "Quem foi Joana d'Arc?", options: ["Heroína francesa e santa", "Rainha da Inglaterra", "Bruxa", "Pintora"], correct: 0, category: "historia", difficulty: 2, explanation: "Líder militar na Guerra dos 100 Anos." },
+    { question: "Qual a capital da República Tcheca?", options: ["Praga", "Viena", "Budapeste", "Bratislava"], correct: 0, category: "geografia", difficulty: 2, explanation: "Praga." },
+    { question: "O que é 'Supernova'?", options: ["Explosão estelar", "Estrela nova", "Buraco negro", "Planeta gigante"], correct: 0, category: "ciencias", difficulty: 2, explanation: "Morte explosiva de uma estrela massiva." },
+    { question: "Quem pintou 'O Beijo'?", options: ["Gustav Klimt", "Picasso", "Munch", "Rodin"], correct: 0, category: "arte", difficulty: 3, explanation: "Gustav Klimt." },
+    { question: "Qual a moeda do México?", options: ["Peso Mexicano", "Dólar", "Real", "Sol"], correct: 0, category: "geografia", difficulty: 2, explanation: "Peso." }
 ];
 
 // --- Lista de Prêmios (Escada de 1 a 50) ---
@@ -512,7 +612,8 @@ const screenGame = document.getElementById('game-screen');
 const screenEnd = document.getElementById('end-screen');
 const feedbackOverlay = document.getElementById('feedback-overlay');
 const exitOverlay = document.getElementById('exit-overlay');
-const toastEl = document.getElementById('game-toast'); // Toast Element
+// Novo elemento de aviso
+const startWarningOverlay = document.getElementById('start-warning-overlay');
 
 const questionText = document.getElementById('question-text');
 const optionsContainer = document.getElementById('options-container');
@@ -570,8 +671,9 @@ function startGame(mode) {
     // Se por acaso não tiver 50 (ex: filtro muito restrito), completa com o que tiver sobrado das fáceis ou repete (fallback seguro)
     if (selectedQuestions.length < 50) {
         const needed = 50 - selectedQuestions.length;
-        const remainingEasy = easyPool.slice(5); // Fáceis que sobraram
-        selectedQuestions = selectedQuestions.concat(remainingEasy.slice(0, needed));
+        // Pega qualquer pergunta que sobrou, mesmo que seja fácil, pra completar
+        const remaining = pool.filter(q => !selectedQuestions.includes(q)).sort(() => 0.5 - Math.random());
+        selectedQuestions = selectedQuestions.concat(remaining.slice(0, needed));
     }
     
     // Garante corte em 50
@@ -584,23 +686,17 @@ function startGame(mode) {
     renderPrizeList();
     
     switchScreen(screenGame);
-    showGameToast(); // Mostra o aviso rápido
+    // Substituído o Toast pelo Modal de Aviso
+    showStartWarning(); 
     loadQuestion();
 }
 
-function showGameToast() {
-    toastEl.classList.remove('hidden');
-    // Força reflow
-    void toastEl.offsetWidth;
-    toastEl.classList.add('visible');
+function showStartWarning() {
+    startWarningOverlay.classList.remove('hidden');
+}
 
-    // Esconde depois de 3.5 segundos
-    setTimeout(() => {
-        toastEl.classList.remove('visible');
-        setTimeout(() => {
-            toastEl.classList.add('hidden');
-        }, 500); // Tempo da transição CSS
-    }, 3500);
+function closeStartWarning() {
+    startWarningOverlay.classList.add('hidden');
 }
 
 function showAbout() {

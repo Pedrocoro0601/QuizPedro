@@ -103,11 +103,6 @@
                 </div>
             </header>
 
-            <!-- Aviso Rápido (Toast) -->
-            <div id="game-toast" class="toast hidden">
-                ⚠️ As perguntas são misturadas: Fácil, Médio e Difícil!
-            </div>
-
             <div class="game-layout">
                 <!-- Barra Lateral de Prêmios (Visível apenas em Desktop) -->
                 <aside class="prize-ladder-container desktop-only">
@@ -144,6 +139,22 @@
                 </div>
             </div>
         </section>
+
+        <!-- Overlay de Aviso Inicial (Novo) -->
+        <div id="start-warning-overlay" class="overlay hidden" style="z-index: 200;">
+            <div class="modal-card">
+                <div style="text-align: right; margin-bottom: -10px;">
+                    <button class="btn-icon" onclick="closeStartWarning()" style="margin-left: auto;">✖</button>
+                </div>
+                <div style="font-size: 3rem; margin-bottom: 10px;">⚠️</div>
+                <h3 style="color: var(--secondary-color);">Atenção, sô!</h3>
+                <p>O desafio aqui não é brincadeira não!</p>
+                <p style="font-size: 0.95rem; background: #fff8e1; padding: 10px; border-radius: 8px; border: 1px dashed var(--accent-color);">
+                    As perguntas são misturadas: <strong>5 Fáceis</strong> pra aquecer o tico e teco, e depois <strong>45 Médias e Difíceis</strong> pra testar a paciência!
+                </p>
+                <button class="btn btn-primary" onclick="closeStartWarning()" style="width: 100%; margin-top: 10px;">Entendi, manda vê!</button>
+            </div>
+        </div>
 
         <!-- Overlay de Confirmação de Saída -->
         <div id="exit-overlay" class="overlay hidden">
